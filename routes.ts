@@ -2,6 +2,7 @@ import { createElement } from 'react'
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 import Root from './root'
 import IndexRoute from './routes/_index'
+import HomeReactRoute from './routes/home-react'
 import BlogsRoute from './routes/blogs'
 import BlogSlugRoute from './routes/blogs.$slug'
 import ContactUsRoute from './routes/contact-us'
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
     element: createElement(Root),
     children: [
       { index: true, element: createElement(IndexRoute) },
+      { path: 'home-react', element: createElement(HomeReactRoute) },
       { path: 'blogs', element: createElement(BlogsRoute) },
       {
         path: 'blogs/:slug',

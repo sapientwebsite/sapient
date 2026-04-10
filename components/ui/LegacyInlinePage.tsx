@@ -1,7 +1,10 @@
 import { useEffect, useMemo, useState, type MouseEvent } from 'react'
+import { getFooterBlocks, getHeaderBlock } from '~/components/layout/legacyChrome'
 
 type LegacyInlinePageProps = {
   src: string
+  stripHeader?: boolean
+  stripFooter?: boolean
 }
 
 function copyElement(targetDoc: Document, source: Element) {
@@ -57,7 +60,11 @@ function shouldSkipNode(node: Element) {
   return false
 }
 
-export function LegacyInlinePage({ src }: LegacyInlinePageProps) {
+export function LegacyInlinePage({
+  src,
+  stripHeader = false,
+  stripFooter = false,
+}: LegacyInlinePageProps) {
   const [markup, setMarkup] = useState<string>('')
   const [loading, setLoading] = useState(true)
   const appendedNodes = useMemo(() => [] as HTMLElement[], [])
@@ -162,7 +169,19 @@ export function LegacyInlinePage({ src }: LegacyInlinePageProps) {
       })
 
       const bodyMain = parsedDoc.body.querySelector('#main')
-      setMarkup(bodyMain ? bodyMain.outerHTML : parsedDoc.body.innerHTML)
+      if (bodyMain) {
+        const bodyMainClone = bodyMain.cloneNode(true) as HTMLElement
+        if (stripHeader) {
+          const headerBlock = getHeaderBlock(bodyMainClone)
+          headerBlock?.remove()
+        }
+        if (stripFooter) {
+          getFooterBlocks(bodyMainClone).forEach((footerBlock) => footerBlock.remove())
+        }
+        setMarkup(bodyMainClone.outerHTML)
+      } else {
+        setMarkup(parsedDoc.body.innerHTML)
+      }
 
       const svgTemplates = parsedDoc.getElementById('svg-templates')
       if (svgTemplates) {
@@ -191,7 +210,7 @@ export function LegacyInlinePage({ src }: LegacyInlinePageProps) {
       abortController.abort()
       clearInjectedNodes()
     }
-  }, [appendedNodes, src])
+  }, [appendedNodes, src, stripFooter, stripHeader])
 
   return (
     <div className="legacy-inline-shell" onClickCapture={handleLegacyLinkClickCapture}>

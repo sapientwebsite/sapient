@@ -28,6 +28,7 @@
   "include": [
     "app.css",
     "components",
+    "constants",
     "data",
     "entry.client.tsx",
     "entry.server.tsx",
