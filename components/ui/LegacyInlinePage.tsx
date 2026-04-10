@@ -98,7 +98,23 @@ export function LegacyInlinePage({ src }: LegacyInlinePageProps) {
       normalizedHref.startsWith('/blogs/')
     ) {
       event.preventDefault()
-      window.location.assign(normalizedHref)
+
+      const canonicalHref =
+        normalizedHref === '/blog'
+          ? '/blogs'
+          : normalizedHref.startsWith('/blogs/')
+            ? `/blog/${normalizedHref.slice('/blogs/'.length)}`
+            : normalizedHref
+      const currentPath = window.location.pathname
+      const shouldReplaceHistory =
+        currentPath.startsWith('/blog/') &&
+        (canonicalHref === '/blog' || canonicalHref === '/blogs')
+
+      if (shouldReplaceHistory) {
+        window.location.replace(canonicalHref)
+      } else {
+        window.location.assign(canonicalHref)
+      }
     }
   }
 
