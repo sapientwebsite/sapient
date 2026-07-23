@@ -2578,7 +2578,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											xk2omdT8S: 'Grow Old & Wise, Invest for Your Life',
 											zzwMoqxYN: 'Aug 18, 2021',
 											OM1OAQNzk: '/WmutxYNfieb5IV4xaW6Kqr219aI.avif',
-											Dwy__SZcc: '‘Change is the only constant thing in life\u2019 \u2013 this adage is very apt for today\u2019s unpredictable future.'
+													Dwy__SZcc: 'A financial plan is a road map to help people achieve their goals and this also applies to their retirement years.'
 										},
 										{
 											id: '3',
@@ -2586,7 +2586,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											xk2omdT8S: 'Proposed regulations ignores ground realities',
 											zzwMoqxYN: 'Aug 22, 2017',
 											OM1OAQNzk: '/BRX0f8db4Q9BoSKp4am2Qlj8c1M.avif',
-											Dwy__SZcc: 'The mutual fund industry is close to garner Rs 20 trillion of Asset Under Management (AUM) but the distributor community is grappling...'
+													Dwy__SZcc: 'The mutual fund industry is close to garner Rs 20 trillion of Asset Under Management (AUM) but the distributor community is grappling with the new proposed rules laid by the Securities Exchange Board of India (Sebi).'
 										},
 										{
 											id: '4',
@@ -2594,7 +2594,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											xk2omdT8S: '\u2018Role of distributors is critical in handling investor emotions\u2019',
 											zzwMoqxYN: 'Oct 19, 2021',
 											OM1OAQNzk: '/ws7eqJqrZwRRB2iq2gSj7Vb6p0s.avif',
-											Dwy__SZcc: 'Dhruv Mehta, chairman, Foundation of Independent Financial Advisors (Fifa), speaks to Mint about the wave of consolidation...'
+													Dwy__SZcc: 'Each family requires somebody to service them not just on the paper filling part but also the emotional part and knowledge part, Dhruv Mehta, chairman, Foundation of Independent Financial Advisors.'
 										}
 									];
 									return (

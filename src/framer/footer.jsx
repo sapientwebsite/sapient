@@ -1059,7 +1059,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											__fromCanvasComponent={true}
 											className={"framer-12e0jkr"}
 											data-framer-name={
-												"Sapient Wealth 2024 All Rights Reserved. Designed by Bricx"
+												"Sapient Wealth 2026 All Rights Reserved. Designed by Bricx"
 											}
 											fonts={["FS;Satoshi-regular"]}
 											layoutDependency={layoutDependency}
@@ -1084,7 +1084,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													}}
 												>
 													{
-														"Sapient Wealth 2024 All Rights Reserved. Designed by "
+														"Sapient Wealth 2026 All Rights Reserved. Designed by "
 													}
 													<Link
 														href={"bricxlabs.com"}
@@ -1958,7 +1958,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											__fromCanvasComponent={true}
 											className={"framer-donjt"}
 											data-framer-name={
-												"Sapient Wealth 2024 All Rights Reserved. Designed by Bricx"
+												"Sapient Wealth 2026 All Rights Reserved. Designed by Bricx"
 											}
 											fonts={["FS;Satoshi-regular"]}
 											layoutDependency={layoutDependency}
@@ -1983,7 +1983,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													}}
 												>
 													{
-														"Sapient Wealth 2024 All Rights Reserved. Designed by "
+														"Sapient Wealth 2026 All Rights Reserved. Designed by "
 													}
 													<Link
 														href={"bricxlabs.com"}
@@ -2048,18 +2048,25 @@ var css2 = [
 	".framer-BV86v .framer-donjt { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
 	"@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-BV86v.framer-1y6o4iu, .framer-BV86v .framer-srnlzz, .framer-BV86v .framer-56etro, .framer-BV86v .framer-1jbvdlu, .framer-BV86v .framer-wcble3, .framer-BV86v .framer-xe00zo, .framer-BV86v .framer-fmnv90, .framer-BV86v .framer-bho7ok, .framer-BV86v .framer-12yhpdg, .framer-BV86v .framer-og9alu, .framer-BV86v .framer-z4rugq, .framer-BV86v .framer-4onfir, .framer-BV86v .framer-1965sgb, .framer-BV86v .framer-o0fs7r, .framer-BV86v .framer-1vrr7td, .framer-BV86v .framer-1d84tev, .framer-BV86v .framer-1pghndl, .framer-BV86v .framer-1ooferc, .framer-BV86v .framer-xn55n4, .framer-BV86v .framer-2zpcf4, .framer-BV86v .framer-z0vgi2, .framer-BV86v .framer-qrljqg, .framer-BV86v .framer-1oiiiop { gap: 0px; } .framer-BV86v.framer-1y6o4iu > * { margin: 0px; margin-bottom: calc(10px / 2); margin-top: calc(10px / 2); } .framer-BV86v.framer-1y6o4iu > :first-child, .framer-BV86v .framer-srnlzz > :first-child, .framer-BV86v .framer-1jbvdlu > :first-child, .framer-BV86v .framer-wcble3 > :first-child, .framer-BV86v .framer-xe00zo > :first-child, .framer-BV86v .framer-bho7ok > :first-child, .framer-BV86v .framer-og9alu > :first-child, .framer-BV86v .framer-z4rugq > :first-child, .framer-BV86v .framer-4onfir > :first-child, .framer-BV86v .framer-1965sgb > :first-child, .framer-BV86v .framer-o0fs7r > :first-child, .framer-BV86v .framer-1vrr7td > :first-child, .framer-BV86v .framer-1d84tev > :first-child, .framer-BV86v .framer-1pghndl > :first-child, .framer-BV86v .framer-1ooferc > :first-child, .framer-BV86v .framer-xn55n4 > :first-child, .framer-BV86v .framer-2zpcf4 > :first-child, .framer-BV86v .framer-z0vgi2 > :first-child, .framer-BV86v .framer-1oiiiop > :first-child { margin-top: 0px; } .framer-BV86v.framer-1y6o4iu > :last-child, .framer-BV86v .framer-srnlzz > :last-child, .framer-BV86v .framer-1jbvdlu > :last-child, .framer-BV86v .framer-wcble3 > :last-child, .framer-BV86v .framer-xe00zo > :last-child, .framer-BV86v .framer-bho7ok > :last-child, .framer-BV86v .framer-og9alu > :last-child, .framer-BV86v .framer-z4rugq > :last-child, .framer-BV86v .framer-4onfir > :last-child, .framer-BV86v .framer-1965sgb > :last-child, .framer-BV86v .framer-o0fs7r > :last-child, .framer-BV86v .framer-1vrr7td > :last-child, .framer-BV86v .framer-1d84tev > :last-child, .framer-BV86v .framer-1pghndl > :last-child, .framer-BV86v .framer-1ooferc > :last-child, .framer-BV86v .framer-xn55n4 > :last-child, .framer-BV86v .framer-2zpcf4 > :last-child, .framer-BV86v .framer-z0vgi2 > :last-child, .framer-BV86v .framer-1oiiiop > :last-child { margin-bottom: 0px; } .framer-BV86v .framer-srnlzz > * { margin: 0px; margin-bottom: calc(56px / 2); margin-top: calc(56px / 2); } .framer-BV86v .framer-56etro > * { margin: 0px; margin-left: calc(336px / 2); margin-right: calc(336px / 2); } .framer-BV86v .framer-56etro > :first-child, .framer-BV86v .framer-fmnv90 > :first-child, .framer-BV86v .framer-12yhpdg > :first-child, .framer-BV86v .framer-qrljqg > :first-child { margin-left: 0px; } .framer-BV86v .framer-56etro > :last-child, .framer-BV86v .framer-fmnv90 > :last-child, .framer-BV86v .framer-12yhpdg > :last-child, .framer-BV86v .framer-qrljqg > :last-child { margin-right: 0px; } .framer-BV86v .framer-1jbvdlu > *, .framer-BV86v .framer-1965sgb > *, .framer-BV86v .framer-1d84tev > *, .framer-BV86v .framer-1pghndl > * { margin: 0px; margin-bottom: calc(32px / 2); margin-top: calc(32px / 2); } .framer-BV86v .framer-wcble3 > *, .framer-BV86v .framer-xe00zo > *, .framer-BV86v .framer-og9alu > *, .framer-BV86v .framer-z4rugq > *, .framer-BV86v .framer-4onfir > *, .framer-BV86v .framer-1ooferc > *, .framer-BV86v .framer-xn55n4 > *, .framer-BV86v .framer-2zpcf4 > * { margin: 0px; margin-bottom: calc(16px / 2); margin-top: calc(16px / 2); } .framer-BV86v .framer-fmnv90 > * { margin: 0px; margin-left: calc(20px / 2); margin-right: calc(20px / 2); } .framer-BV86v .framer-bho7ok > * { margin: 0px; margin-bottom: calc(8px / 2); margin-top: calc(8px / 2); } .framer-BV86v .framer-12yhpdg > * { margin: 0px; margin-left: calc(104px / 2); margin-right: calc(104px / 2); } .framer-BV86v .framer-o0fs7r > * { margin: 0px; margin-bottom: calc(24px / 2); margin-top: calc(24px / 2); } .framer-BV86v .framer-1vrr7td > * { margin: 0px; margin-bottom: calc(12px / 2); margin-top: calc(12px / 2); } .framer-BV86v .framer-z0vgi2 > * { margin: 0px; margin-bottom: calc(20px / 2); margin-top: calc(20px / 2); } .framer-BV86v .framer-qrljqg > * { margin: 0px; margin-left: calc(12px / 2); margin-right: calc(12px / 2); } .framer-BV86v .framer-1oiiiop > * { margin: 0px; margin-bottom: calc(4.363636493682861px / 2); margin-top: calc(4.363636493682861px / 2); } }",
 	".framer-BV86v.framer-v-1h1ksbx.framer-1y6o4iu { width: 100%; max-width: 100%; }",
-	".framer-BV86v.framer-v-1h1ksbx .framer-srnlzz { padding: 0px; width: min-content; }",
-	".framer-BV86v.framer-v-1h1ksbx .framer-o0fs7r { order: 0; }",
-	".framer-BV86v.framer-v-1h1ksbx .framer-1d84tev { order: 1; }",
-	".framer-BV86v.framer-v-1h1ksbx .framer-z0vgi2 { order: 2; }",
+	".framer-BV86v.framer-v-1h1ksbx .framer-srnlzz { padding: 0px; width: 100%; max-width: 100%; }",
+	".framer-BV86v.framer-v-1h1ksbx .framer-1965sgb { width: 100%; max-width: 100%; padding: 40px 24px 48px 24px; box-sizing: border-box; }",
+	".framer-BV86v.framer-v-1h1ksbx .framer-o0fs7r { order: 0; padding-left: 0px; padding-right: 0px; width: 100%; }",
+	".framer-BV86v.framer-v-1h1ksbx .framer-1d84tev { order: 1; padding-left: 0px; padding-right: 0px; width: 100%; }",
+	".framer-BV86v.framer-v-1h1ksbx .framer-z0vgi2 { order: 2; padding-left: 0px; padding-right: 0px; width: 100%; }",
 	".framer-BV86v.framer-v-1h1ksbx .framer-1vvvjj0 { height: var(--framer-aspect-ratio-supported, 12px); }",
 	".framer-BV86v.framer-v-kezezg.framer-1y6o4iu { width: 100%; max-width: 100%; }",
 	".framer-BV86v.framer-v-kezezg .framer-srnlzz { width: 100%; }",
 	".framer-BV86v.framer-v-wvsiez.framer-1y6o4iu { width: 100%; max-width: 100%; }",
-	".framer-BV86v.framer-v-wvsiez .framer-srnlzz { padding: 64px 24px 88px 24px; width: 100%; }",
-	".framer-BV86v.framer-v-wvsiez .framer-56etro { gap: 40px; }",
-	".framer-BV86v.framer-v-wvsiez .framer-12yhpdg { gap: 24px; }",
-	"@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-BV86v.framer-v-wvsiez .framer-56etro, .framer-BV86v.framer-v-wvsiez .framer-12yhpdg { gap: 0px; } .framer-BV86v.framer-v-wvsiez .framer-56etro > * { margin: 0px; margin-left: calc(40px / 2); margin-right: calc(40px / 2); } .framer-BV86v.framer-v-wvsiez .framer-56etro > :first-child, .framer-BV86v.framer-v-wvsiez .framer-12yhpdg > :first-child { margin-left: 0px; } .framer-BV86v.framer-v-wvsiez .framer-56etro > :last-child, .framer-BV86v.framer-v-wvsiez .framer-12yhpdg > :last-child { margin-right: 0px; } .framer-BV86v.framer-v-wvsiez .framer-12yhpdg > * { margin: 0px; margin-left: calc(24px / 2); margin-right: calc(24px / 2); } }",
+	".framer-BV86v.framer-v-wvsiez .framer-srnlzz { overflow: visible; padding: 64px 32px 88px 32px; width: 100%; }",
+	".framer-BV86v.framer-v-wvsiez .framer-56etro { flex-direction: column; align-items: stretch; gap: 40px; justify-content: flex-start; }",
+	".framer-BV86v.framer-v-wvsiez .framer-1jbvdlu { flex: none; width: 100%; padding: 0px; }",
+	".framer-BV86v.framer-v-wvsiez .framer-zz1q0x { width: 100%; max-width: 420px; }",
+	".framer-BV86v.framer-v-wvsiez .framer-1ijirhc { width: 100%; gap: 40px; justify-content: flex-start; }",
+	".framer-BV86v.framer-v-wvsiez .framer-12e0jkr { margin-top: 8px; }",
+	".framer-BV86v.framer-v-wvsiez .framer-12yhpdg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; width: 100%; justify-content: stretch; }",
+	".framer-BV86v.framer-v-wvsiez .framer-og9alu, .framer-BV86v.framer-v-wvsiez .framer-z4rugq, .framer-BV86v.framer-v-wvsiez .framer-4onfir { width: 100%; min-width: 0; }",
+	".framer-BV86v.framer-v-wvsiez .framer-1uqepi9, .framer-BV86v.framer-v-wvsiez .framer-mb4obu, .framer-BV86v.framer-v-wvsiez .framer-1ykhi1t, .framer-BV86v.framer-v-wvsiez .framer-5foygs, .framer-BV86v.framer-v-wvsiez .framer-l79q2n, .framer-BV86v.framer-v-wvsiez .framer-o22etr, .framer-BV86v.framer-v-wvsiez .framer-19nr13b, .framer-BV86v.framer-v-wvsiez .framer-865bm7, .framer-BV86v.framer-v-wvsiez .framer-ap5e2w, .framer-BV86v.framer-v-wvsiez .framer-cele92, .framer-BV86v.framer-v-wvsiez .framer-159xhvb, .framer-BV86v.framer-v-wvsiez .framer-kuojq2 { width: 100%; white-space: normal; word-break: normal; }",
+	"@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-BV86v.framer-v-wvsiez .framer-56etro { gap: 0px; } .framer-BV86v.framer-v-wvsiez .framer-56etro > * { margin: 0px; margin-bottom: calc(40px / 2); margin-top: calc(40px / 2); margin-left: 0px; margin-right: 0px; } .framer-BV86v.framer-v-wvsiez .framer-56etro > :first-child { margin-top: 0px; } .framer-BV86v.framer-v-wvsiez .framer-56etro > :last-child { margin-bottom: 0px; } }",
 	...css,
 ];
 var FramerwS0DVW4p1 = withCSS(Component, css2, "framer-BV86v");

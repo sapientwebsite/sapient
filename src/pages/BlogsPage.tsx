@@ -3,38 +3,28 @@ import Footer from '../framer/footer';
 import BlogsText from '../framer/blogs-text';
 import BlogList from '../framer/blog-list';
 
+const BLOGS_BG = 'rgb(229, 235, 209)';
+
 export default function BlogsPage() {
   const blogsBg = {
-    backgroundColor: 'rgb(229, 235, 209)',
-    backgroundImage: 'url(/vIFOS4BuUd5Dwrb6UZjsQHdbE.avif)',
+    backgroundColor: BLOGS_BG,
+    backgroundImage: 'url(/sunburst-hq.png)',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center top',
     backgroundSize: 'cover',
   } as const;
 
   return (
-    <div className="min-h-screen" style={blogsBg}>
-      <Navigation 
-        variant="Desktop"
-        style={{ width: '100%' }}
-      />
-      <main className="w-full pt-20 pb-40">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-20">
-          <div className="flex flex-col gap-12">
-            <BlogsText 
-              variant="Desktop"
-              style={{ width: '100%' }}
-            />
-            <BlogList 
-              style={{ width: '100%' }}
-            />
-          </div>
-        </div>
+    <div className="blogs-page min-h-screen flex flex-col overflow-x-hidden" style={blogsBg}>
+      <Navigation.Responsive style={{ width: '100%' }} />
+
+      <main className="w-full flex-1 pb-40 overflow-x-hidden pt-6 xl:pt-12">
+        <BlogsText.Responsive style={{ width: '100%' }} />
+        <div className="h-8 xl:h-16" />
+        <BlogList.Responsive style={{ width: '100%' }} />
       </main>
-      <Footer 
-        variant="Desktop" 
-        style={{ width: '100%' }} 
-      />
+
+      <Footer.Responsive style={{ width: '100%' }} />
     </div>
   );
 }

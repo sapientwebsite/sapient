@@ -4,21 +4,12 @@ import ContactUs from '../framer/contact-us';
 
 export default function ContactUsPage() {
   return (
-    <div className="min-h-screen bg-[#f5f2eb]">
-      <Navigation 
-        variant="Desktop"
-        style={{ width: '100%' }}
-      />
-      <main>
-        <ContactUs 
-          variant="Desktop"
-          style={{ width: '100%' }}
-        />
+    <div className="min-h-screen bg-[#f5f2eb] overflow-x-hidden">
+      <Navigation.Responsive style={{ width: '100%' }} />
+      <main className="overflow-x-hidden">
+        <ContactUs.Responsive style={{ width: '100%' }} />
       </main>
-      <Footer 
-        variant="Desktop" 
-        style={{ width: '100%' }} 
-      />
+      <Footer.Responsive style={{ width: '100%' }} />
     </div>
   );
 }

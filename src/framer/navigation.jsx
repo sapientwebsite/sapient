@@ -388,7 +388,8 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 						layoutDependency={layoutDependency}
 						layoutId={"hUMCu1JaQ"}
 						ref={refBinding}
-						layout
+						// layout transforms break position:fixed and pull the bar / dropdowns up
+						layout={baseVariant !== "hUMCu1JaQ"}
 						transition={menuPanelTransition}
 						style={{
 							backgroundColor: "rgb(23, 35, 30)",
@@ -566,7 +567,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																	onDismiss={overlay.hide}
 																	placement={"bottom"}
 																	safeArea={true}
-																	zIndex={11}
+																	zIndex={120}
 																>
 																	<MotionDivWithFX
 																		__perspectiveFX={false}
@@ -934,7 +935,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																	onDismiss={overlay1.hide}
 																	placement={"bottom"}
 																	safeArea={false}
-																	zIndex={11}
+																	zIndex={120}
 																>
 																	<MotionDivWithFX
 																		__perspectiveFX={false}
@@ -2422,7 +2423,7 @@ addFonts(
 // virtual:navigation
 import { jsx } from "react/jsx-runtime";
 var locales = [];
-var DESKTOP_MQ = "(min-width: 1200px)";
+var DESKTOP_MQ = "(min-width: 1280px)";
 
 function useIsDesktopNav() {
 	const [isDesktop, setIsDesktop] = React.useState(() =>
@@ -2484,14 +2485,29 @@ ComponentWithRoot.Responsive = ({ locale = "", variants: _variants, ...rest }) =
 			locale={locale}
 			locales={locales}
 		>
-			{jsx(
-				stdin_default,
-				{
-					...rest,
-					// Only set the breakpoint shell. Open/close is owned by internal setVariant.
-					variant: isDesktop ? "Desktop" : "Phone",
-				},
-				isDesktop ? "desktop" : "mobile",
+			{isDesktop ? (
+				<div
+					className="framer-nav-fixed-slot"
+					style={{ width: "100%", paddingTop: 94, boxSizing: "border-box" }}
+				>
+					{jsx(
+						stdin_default,
+						{
+							...rest,
+							variant: "Desktop",
+						},
+						"desktop",
+					)}
+				</div>
+			) : (
+				jsx(
+					stdin_default,
+					{
+						...rest,
+						variant: "Phone",
+					},
+					"mobile",
+				)
 			)}
 		</ContextProviders>
 	);

@@ -5,7 +5,7 @@ import SuccessPage from '../framer/success-page';
 export default function SuccessPageContent() {
   return (
     <div className="min-h-screen bg-[#FDFCF9] flex flex-col">
-      <Navigation 
+      <Navigation.Responsive
         variant="Desktop"
         style={{ width: '100%' }}
       />
@@ -15,7 +15,7 @@ export default function SuccessPageContent() {
           style={{ width: '100%', maxWidth: '1200px' }}
         />
       </main>
-      <Footer 
+      <Footer.Responsive
         variant="Desktop" 
         style={{ width: '100%' }} 
       />

@@ -5,7 +5,7 @@ import TermsConditions from '../framer/terms-conditions';
 export default function TermsConditionsPage() {
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
-      <Navigation 
+      <Navigation.Responsive
         variant="Desktop"
         style={{ width: '100%' }}
       />
@@ -15,7 +15,7 @@ export default function TermsConditionsPage() {
           style={{ width: '100%' }}
         />
       </main>
-      <Footer 
+      <Footer.Responsive
         variant="Desktop" 
         style={{ width: '100%' }} 
       />

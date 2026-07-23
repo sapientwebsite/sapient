@@ -281,8 +281,8 @@ import { WithFramerBreakpoints } from "unframer";
 import { jsx } from "react/jsx-runtime";
 var locales = [];
 var defaultResponsiveVariants = {
-	base: "BbRSkFoem", // Phone inner layout
-	md: "N90JgFriD", // iPad / tablet
+	base: "BbRSkFoem", // Phone — single-column cards
+	md: "N90JgFriD", // Tablet — 2-column card grid
 	xl: "Y0d6cI0T3", // Desktop
 };
 /** @type {function(Props): any} */

@@ -5,7 +5,7 @@ import PrivacyPolicy from '../framer/privacy-policy';
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
-      <Navigation 
+      <Navigation.Responsive
         variant="Desktop"
         style={{ width: '100%' }}
       />
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
           style={{ width: '100%' }}
         />
       </main>
-      <Footer 
+      <Footer.Responsive
         variant="Desktop" 
         style={{ width: '100%' }} 
       />

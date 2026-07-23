@@ -360,8 +360,8 @@ var css = [
 	".framer-RpB6b .framer-1euv5b7-container { flex: none; height: 763px; max-width: 1200px; position: relative; width: 100%; }",
 	".framer-RpB6b.framer-v-12mj72b.framer-1e58fnu { padding: 100px 24px 100px 24px; width: 100%; min-width: 100%; max-width: none; }",
 	".framer-RpB6b.framer-v-12mj72b .framer-1euv5b7-container { max-width: 1200px; width: 100%; }",
-	".framer-RpB6b.framer-v-1s57erk.framer-1e58fnu { padding: 40px 24px 40px 24px; width: 100%; min-width: 100%; max-width: none; }",
-	".framer-RpB6b.framer-v-1s57erk .framer-1euv5b7-container { height: auto; width: 100%; max-width: 1200px; }",
+	".framer-RpB6b.framer-v-1s57erk.framer-1e58fnu { padding: 40px 32px 40px 32px; width: 100%; min-width: 0; max-width: 100%; box-sizing: border-box; overflow: visible; }",
+	".framer-RpB6b.framer-v-1s57erk .framer-1euv5b7-container { height: auto; width: 100%; max-width: 100%; min-width: 0; overflow: visible; box-sizing: border-box; }",
 ];
 var FramerODl39vzld = withCSS(Component, css, "framer-RpB6b");
 var stdin_default2 = FramerODl39vzld;

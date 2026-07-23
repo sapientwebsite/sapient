@@ -11,7 +11,7 @@ export default function BlogDetailPage({ slug }: { slug?: string }) {
 
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
-      <Navigation 
+      <Navigation.Responsive
         variant="Desktop"
         style={{ width: '100%' }}
       />
@@ -87,10 +87,7 @@ export default function BlogDetailPage({ slug }: { slug?: string }) {
         </article>
       </main>
 
-      <Footer 
-        variant="Desktop" 
-        style={{ width: '100%' }} 
-      />
+      <Footer.Responsive style={{ width: '100%' }} />
     </div>
   );
 }

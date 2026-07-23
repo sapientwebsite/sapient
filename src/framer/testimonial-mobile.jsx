@@ -219,11 +219,14 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 var css = [
 	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
 	".framer-lqICQ.framer-1a5xatv, .framer-lqICQ .framer-1a5xatv { display: block; }",
-	".framer-lqICQ.framer-p0cuz2 { align-content: center; align-items: center; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: flex-start; overflow: visible; padding: 40px 16px 40px 16px; position: relative; width: 390px; }",
-	".framer-lqICQ .framer-1h7g6m2 { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 343px; word-break: break-word; word-wrap: break-word; }",
+	".framer-lqICQ.framer-p0cuz2 { align-content: center; align-items: center; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: flex-start; overflow: visible; padding: 40px 24px; position: relative; width: 100%; max-width: 100%; box-sizing: border-box; }",
+	".framer-lqICQ .framer-1h7g6m2 { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; max-width: 100%; word-break: break-word; word-wrap: break-word; text-align: center; }",
 	".framer-lqICQ .framer-psd5ra { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 100%; }",
 	".framer-lqICQ .framer-13j0gyp { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 20px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 100%; }",
-	".framer-lqICQ .framer-ccs7yq-container { flex: none; height: auto; position: relative; width: 358px; }",
+	".framer-lqICQ .framer-ccs7yq-container { flex: none; height: auto; position: relative; width: 100%; max-width: 100%; }",
+	/* Phone review cards — keep internal padding */
+	".framer-PUPrt.framer-v-1o0sath.framer-1f6373y { width: 100% !important; max-width: 100% !important; }",
+	".framer-PUPrt.framer-v-1o0sath .framer-1931pf6, .framer-PUPrt.framer-v-1o0sath .framer-1ogem26, .framer-PUPrt.framer-v-1o0sath .framer-1mhl94w { padding: 20px !important; box-sizing: border-box !important; width: 100% !important; }",
 ];
 var Framerz7dxohBTZ = withCSS(Component, css, "framer-lqICQ");
 var stdin_default2 = Framerz7dxohBTZ;

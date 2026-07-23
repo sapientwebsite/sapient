@@ -5,7 +5,7 @@ import Disclaimer from '../framer/disclaimer';
 export default function DisclaimerPage() {
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
-      <Navigation 
+      <Navigation.Responsive
         variant="Desktop"
         style={{ width: '100%' }}
       />
@@ -15,7 +15,7 @@ export default function DisclaimerPage() {
           style={{ width: '100%' }}
         />
       </main>
-      <Footer 
+      <Footer.Responsive
         variant="Desktop" 
         style={{ width: '100%' }} 
       />

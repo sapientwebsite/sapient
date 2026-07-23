@@ -66,7 +66,7 @@ export default function CPCPage() {
   };
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden bg-[#FDFCF9]">
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#FDFCF9]" style={{ backgroundImage: 'url(/sunburst-hq.png)', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', backgroundSize: 'cover' }}>
       <Navigation.Responsive style={{ width: '100%' }} />
 
       <main className="w-full max-w-[1440px] mx-auto pt-10 sm:pt-16 lg:pt-20 pb-24 sm:pb-32 lg:pb-40 px-4 sm:px-6 md:px-12 lg:px-20 relative">

@@ -19,10 +19,10 @@ export default function HomePage() {
   return (
     <div className="flex flex-col items-center w-full overflow-x-hidden bg-[rgb(245,_242,_235)] min-h-screen">
       <NavigationFramerComponent.Responsive style={{ width: '100%' }} />
-      <div className="block w-full md:hidden">
+<div className="block w-full xl:hidden">
         <MobileHero />
       </div>
-      <div className="hidden w-full md:block">
+      <div className="hidden w-full xl:block">
         <Hero.Responsive style={{ width: '100%' }} />
       </div>
 
@@ -45,8 +45,8 @@ export default function HomePage() {
       <WhatWeDoBest.Responsive style={{ width: '100%' }} />
       <Global.Responsive style={{ width: '100%' }} />
 
-      <div className="hidden md:block w-full">
-        <Testimonial.Responsive style={{ width: '100%' }} />
+      <div className="hidden md:block w-full self-stretch min-w-0 overflow-x-hidden">
+        <Testimonial.Responsive style={{ width: '100%', maxWidth: '100%' }} />
       </div>
       <div className="block md:hidden w-full">
         <TestimonialMobile.Responsive style={{ width: '100%' }} />
