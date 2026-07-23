@@ -4,7 +4,7 @@ import ContactUs from '../framer/contact-us';
 
 export default function ContactUsPage() {
   return (
-    <div className="min-h-screen bg-[#FDFCF9]">
+    <div className="min-h-screen bg-[#f5f2eb]">
       <Navigation 
         variant="Desktop"
         style={{ width: '100%' }}

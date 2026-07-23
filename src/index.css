@@ -1,3 +1,110 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --page-pad-x: 24px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --page-pad-x: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-pad-x: 48px;
+  }
+}
+
+/* Path to Financial Freedom — phone title was collapsing via min-content parents */
+@media (max-width: 767px) {
+  .framer-sPhs5.framer-v-1ygc8al.framer-n883la,
+  .framer-sPhs5.framer-n883la {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: var(--page-pad-x) !important;
+    padding-right: var(--page-pad-x) !important;
+    box-sizing: border-box !important;
+  }
+
+  .framer-sPhs5.framer-v-1ygc8al.framer-n883la > *,
+  .framer-sPhs5.framer-n883la > * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Phone stack: title + CTA + cards */
+  .framer-sPhs5 .framer-1txi5m7 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* These min-content wrappers caused letter-by-letter wrapping */
+  .framer-sPhs5 .framer-7ci9rp,
+  .framer-sPhs5 .framer-1637z1q {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+  }
+
+  .framer-sPhs5 .framer-1rvm12o,
+  .framer-sPhs5 .framer-1arvhy6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+  }
+
+  .framer-sPhs5 .framer-1rvm12o p,
+  .framer-sPhs5 .framer-1rvm12o span,
+  .framer-sPhs5 .framer-1arvhy6 p,
+  .framer-sPhs5 .framer-1arvhy6 span {
+    white-space: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  .framer-sPhs5 .framer-1iqnmb6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .framer-sPhs5 .framer-18lmdab {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Testimonials — tablet: 2 cards per row, fluid width */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .framer-RpB6b.framer-v-1s57erk.framer-1e58fnu {
+    padding-left: var(--page-pad-x) !important;
+    padding-right: var(--page-pad-x) !important;
+  }
+
+  .framer-PUPrt.framer-v-zstntu.framer-1f6373y {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .framer-PUPrt.framer-v-zstntu .framer-udkm32,
+  .framer-PUPrt.framer-v-zstntu .framer-1cvwklf,
+  .framer-PUPrt.framer-v-zstntu .framer-dbft27 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .framer-PUPrt.framer-v-zstntu .framer-16em0hi,
+  .framer-PUPrt.framer-v-zstntu .framer-26h4qb,
+  .framer-PUPrt.framer-v-zstntu .framer-wu32rg,
+  .framer-PUPrt.framer-v-zstntu .framer-1xoeg65 {
+    min-width: 0 !important;
+  }
+}

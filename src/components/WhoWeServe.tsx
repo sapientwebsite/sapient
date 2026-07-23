@@ -66,27 +66,32 @@ export default function WhoWeServe() {
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const thumbRef = useRef<HTMLDivElement>(null);
   const thumbWidthRef = useRef(40);
-  const [scrollMetrics, setScrollMetrics] = useState({
-    needsScroll: false,
-    thumbWidth: 40,
-    thumbLeft: 0,
-  });
+  const thumbLeftRef = useRef(0);
+  const [needsScroll, setNeedsScroll] = useState(false);
 
   const updateScrollbar = useCallback(() => {
     const el = scrollRef.current;
     if (!el) return;
 
     const { scrollWidth, clientWidth, scrollLeft } = el;
-    const needsScroll = scrollWidth > clientWidth + 1;
-    const ratio = clientWidth / scrollWidth;
+    const canScroll = scrollWidth > clientWidth + 1;
+    const ratio = clientWidth / Math.max(scrollWidth, 1);
     const thumbWidth = Math.max(ratio * clientWidth, 40);
-    const maxThumbLeft = clientWidth - thumbWidth;
-    const maxScroll = scrollWidth - clientWidth;
+    const maxThumbLeft = Math.max(clientWidth - thumbWidth, 0);
+    const maxScroll = Math.max(scrollWidth - clientWidth, 0);
     const thumbLeft = maxScroll > 0 ? (scrollLeft / maxScroll) * maxThumbLeft : 0;
 
     thumbWidthRef.current = thumbWidth;
-    setScrollMetrics({ needsScroll, thumbWidth, thumbLeft });
+    thumbLeftRef.current = thumbLeft;
+
+    if (thumbRef.current) {
+      thumbRef.current.style.width = `${thumbWidth}px`;
+      thumbRef.current.style.transform = `translate3d(${thumbLeft}px, 0, 0)`;
+    }
+
+    setNeedsScroll((prev) => (prev === canScroll ? prev : canScroll));
   }, []);
 
   useEffect(() => {
@@ -94,7 +99,11 @@ export default function WhoWeServe() {
     const el = scrollRef.current;
     if (!el) return;
 
-    const onScroll = () => updateScrollbar();
+    let frame = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(updateScrollbar);
+    };
     el.addEventListener('scroll', onScroll, { passive: true });
 
     const resizeObserver = new ResizeObserver(updateScrollbar);
@@ -102,11 +111,21 @@ export default function WhoWeServe() {
     window.addEventListener('resize', updateScrollbar);
 
     return () => {
+      cancelAnimationFrame(frame);
       el.removeEventListener('scroll', onScroll);
       resizeObserver.disconnect();
       window.removeEventListener('resize', updateScrollbar);
     };
   }, [updateScrollbar]);
+
+  const selectAudience = (id: AudienceId, button: HTMLButtonElement) => {
+    setActiveId(id);
+    button.scrollIntoView({
+      behavior: 'smooth',
+      inline: 'center',
+      block: 'nearest',
+    });
+  };
 
   const scrollFromPointer = (clientX: number) => {
     const el = scrollRef.current;
@@ -147,7 +166,7 @@ export default function WhoWeServe() {
 
   return (
     <section className="w-full bg-[#E8F0DC] py-16 font-[family-name:Satoshi,sans-serif] sm:py-20 lg:py-28">
-      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-10 px-4 sm:gap-12 sm:px-6 lg:gap-14 lg:px-8">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-10 px-[var(--page-pad-x)] sm:gap-12 lg:gap-14">
         <header className="flex max-w-[720px] flex-col items-center gap-3 text-center">
           <h2 className="text-[32px] font-bold leading-[1.15] tracking-[-0.02em] text-[#17231E] sm:text-[40px] lg:text-[48px]">
             Who We Serve
@@ -161,7 +180,7 @@ export default function WhoWeServe() {
           <div
             ref={scrollRef}
             id="who-we-serve-tabs"
-            className="who-serve-tabs w-full overflow-x-auto sm:overflow-visible"
+            className="who-serve-tabs w-full overflow-x-auto overscroll-x-contain sm:overflow-visible"
           >
             <div
               className="flex min-w-min items-center gap-2 sm:flex-wrap sm:justify-center sm:gap-3"
@@ -176,8 +195,8 @@ export default function WhoWeServe() {
                     type="button"
                     role="tab"
                     aria-selected={isActive}
-                    onClick={() => setActiveId(audience.id)}
-                    className={`shrink-0 rounded-full border px-4 py-2.5 text-[13px] font-medium transition-colors duration-300 sm:px-5 sm:py-3 sm:text-[14px] ${
+                    onClick={(event) => selectAudience(audience.id, event.currentTarget)}
+                    className={`shrink-0 scroll-mx-4 rounded-full border px-4 py-2.5 text-[13px] font-medium transition-colors duration-300 sm:px-5 sm:py-3 sm:text-[14px] ${
                       isActive
                         ? 'border-[#17231E] bg-[#17231E] text-white shadow-sm'
                         : 'border-[#A4CF6B] bg-[#F3F7E9] text-[#17231E] shadow-[0_1px_2px_rgba(23,35,30,0.06)] hover:border-[#8FBE55] hover:bg-[#EEF4E3]'
@@ -190,23 +209,24 @@ export default function WhoWeServe() {
             </div>
           </div>
 
-          {scrollMetrics.needsScroll && (
+          {needsScroll && (
             <div
               ref={trackRef}
               role="scrollbar"
               aria-orientation="horizontal"
               aria-controls="who-we-serve-tabs"
-              aria-valuenow={Math.round(scrollMetrics.thumbLeft)}
+              aria-valuenow={Math.round(thumbLeftRef.current)}
               tabIndex={0}
               onPointerDown={onTrackPointerDown}
               className="relative h-1.5 w-full cursor-pointer rounded-full bg-[#D5E0C4] sm:hidden"
             >
               <div
+                ref={thumbRef}
                 onPointerDown={onThumbPointerDown}
-                className="absolute top-0 h-1.5 cursor-grab rounded-full bg-[#17231E] active:cursor-grabbing"
+                className="absolute top-0 h-1.5 cursor-grab rounded-full bg-[#17231E] will-change-transform active:cursor-grabbing"
                 style={{
-                  width: scrollMetrics.thumbWidth,
-                  transform: `translateX(${scrollMetrics.thumbLeft}px)`,
+                  width: thumbWidthRef.current,
+                  transform: `translate3d(${thumbLeftRef.current}px, 0, 0)`,
                 }}
               />
             </div>
@@ -263,6 +283,10 @@ export default function WhoWeServe() {
         .who-serve-tabs {
           scrollbar-width: none;
           -ms-overflow-style: none;
+          scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+          overscroll-behavior-x: contain;
+          touch-action: pan-x;
         }
         .who-serve-tabs::-webkit-scrollbar {
           display: none;

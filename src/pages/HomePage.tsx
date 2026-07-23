@@ -13,12 +13,18 @@ import PathToFinancialFreedom from "../framer/path-to-financial-freedom"
 import FAQ from "../framer/fa-qs"
 import Feature from "../framer/featured-in"
 import WhoWeServe from "../components/WhoWeServe"
+import MobileHero from "../components/MobileHero"
 
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center w-full overflow-x-hidden bg-[rgb(245,_242,_235)] min-h-screen">
       <NavigationFramerComponent.Responsive style={{ width: '100%' }} />
-      <Hero.Responsive style={{ width: '100%' }} />
+      <div className="block w-full md:hidden">
+        <MobileHero />
+      </div>
+      <div className="hidden w-full md:block">
+        <Hero.Responsive style={{ width: '100%' }} />
+      </div>
 
       {/* Desktop STEAR Section — full-bleed background, 3+2 card grid */}
       <div className="hidden xl:block w-full self-stretch min-w-full">

@@ -410,9 +410,8 @@ import { WithFramerBreakpoints } from "unframer";
 import { jsx } from "react/jsx-runtime";
 var locales = [];
 var defaultResponsiveVariants = {
-	base: "zX7gmX3dS",
-	// Desktop layout from md up so wide tablets/laptops aren't stuck on the 810px tablet shell
-	md: "QcaRGDRPP",
+	base: "zX7gmX3dS", // Tablet — 2 cards per row
+	xl: "QcaRGDRPP", // Desktop — 3 cards per row
 };
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {

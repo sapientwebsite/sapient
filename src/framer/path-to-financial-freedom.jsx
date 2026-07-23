@@ -232,10 +232,14 @@ var css = [
 	".framer-A6FAY.framer-v-me6vc1 .framer-1txcd2j-container { height: auto; }",
 	".framer-A6FAY.framer-v-112r1ex.framer-exzk9n { width: 100%; max-width: none; }",
 	".framer-A6FAY.framer-v-112r1ex .framer-1txcd2j-container { height: auto; }",
-	/* Phone half-scroll: fill viewport instead of min-content / fixed 343px cards */
-	".framer-sPhs5.framer-v-1ygc8al.framer-n883la { width: 100% !important; max-width: 100% !important; }",
-	".framer-sPhs5.framer-v-1ygc8al .framer-1txi5m7, .framer-sPhs5.framer-v-1ygc8al .framer-1iqnmb6 { width: 100% !important; max-width: 100% !important; }",
-	".framer-sPhs5.framer-v-1ygc8al .framer-1rvm12o, .framer-sPhs5.framer-v-1ygc8al .framer-1arvhy6 { width: 100% !important; max-width: 100% !important; }",
+	/* Phone half-scroll: break min-content title collapse */
+	".framer-sPhs5.framer-v-1ygc8al.framer-n883la { width: 100% !important; max-width: 100% !important; padding: 40px 24px !important; box-sizing: border-box !important; }",
+	".framer-sPhs5.framer-v-1ygc8al.framer-n883la > * { margin-left: 0 !important; margin-right: 0 !important; }",
+	".framer-sPhs5.framer-v-1ygc8al .framer-1txi5m7 { width: 100% !important; max-width: 100% !important; height: auto !important; overflow: visible !important; }",
+	".framer-sPhs5.framer-v-1ygc8al .framer-7ci9rp, .framer-sPhs5.framer-v-1ygc8al .framer-1637z1q { width: 100% !important; max-width: 100% !important; align-items: center !important; }",
+	".framer-sPhs5.framer-v-1ygc8al .framer-1rvm12o, .framer-sPhs5.framer-v-1ygc8al .framer-1arvhy6 { width: 100% !important; max-width: 100% !important; white-space: normal !important; word-break: normal !important; text-align: center !important; }",
+	".framer-sPhs5.framer-v-1ygc8al .framer-1iqnmb6 { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; }",
+	".framer-sPhs5.framer-v-1ygc8al .framer-18lmdab { width: 100% !important; max-width: 100% !important; }",
 ];
 var FramerUslOo6z3a = withCSS(Component, css, "framer-A6FAY");
 var stdin_default2 = FramerUslOo6z3a;
