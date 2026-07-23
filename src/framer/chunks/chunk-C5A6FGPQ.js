@@ -44,7 +44,8 @@ var Component = /* @__PURE__ */ React.forwardRef(function(props, ref) {
   const layoutDependency = createLayoutDependency(props, variants);
   const ref1 = React.useRef(null);
   const isDisplayed = () => {
-    if (["MUDLpEBHA", "HKRNkZf2m"].includes(baseVariant)) return false;
+    // Hide desktop rows only on Phone — tablet must use real testimonials, not iPad placeholders
+    if (baseVariant === "HKRNkZf2m") return false;
     return true;
   };
   const isDisplayed1 = () => {
@@ -52,11 +53,11 @@ var Component = /* @__PURE__ */ React.forwardRef(function(props, ref) {
     return true;
   };
   const isDisplayed2 = () => {
-    if (baseVariant === "MUDLpEBHA") return false;
+    if (baseVariant === "HKRNkZf2m") return false;
     return true;
   };
   const isDisplayed3 = () => {
-    if (baseVariant === "MUDLpEBHA") return true;
+    // iPad placeholder (Lorem / Investor since) rows — never show
     return false;
   };
   const isDisplayed4 = () => {

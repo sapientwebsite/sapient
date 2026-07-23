@@ -332,10 +332,12 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										{
 											zX7gmX3dS: {
 												style: {
+													height: "auto",
 													maxWidth: "100%",
 													width: "100%",
 												},
-												variant: matchVariant("MUDLpEBHA"),
+												// Use Desktop reviews content (real testimonials), not iPad Lorem placeholders
+												variant: matchVariant("RBvlG_h15"),
 											},
 										},
 										baseVariant,

@@ -89,6 +89,46 @@
     padding-right: var(--page-pad-x) !important;
   }
 
+  .framer-RpB6b.framer-v-1s57erk .framer-1euv5b7-container {
+    height: auto !important;
+  }
+
+  /* Flatten desktop rows into a 2-column grid of real cards */
+  .framer-PUPrt.framer-1f6373y {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch !important;
+  }
+
+  .framer-PUPrt .framer-19prjcb,
+  .framer-PUPrt .framer-udkm32 {
+    display: contents !important;
+    position: static !important;
+    inset: auto !important;
+    height: auto !important;
+    width: auto !important;
+  }
+
+  .framer-PUPrt .framer-svi769,
+  .framer-PUPrt .framer-p4wxd0,
+  .framer-PUPrt .framer-1sdik44,
+  .framer-PUPrt .framer-1w79we9,
+  .framer-PUPrt .framer-1iov4ev,
+  .framer-PUPrt .framer-kasja9 {
+    position: relative !important;
+    inset: auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 280px !important;
+    flex: none !important;
+  }
+
+  /* Legacy iPad placeholder layout (if ever remounted) */
   .framer-PUPrt.framer-v-zstntu.framer-1f6373y {
     width: 100% !important;
     max-width: 100% !important;
