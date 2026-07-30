@@ -286,6 +286,26 @@
   z-index: 100 !important;
 }
 
+/* Phone/tablet nav — match page side inset (was only 16px; content uses more) */
+@media (max-width: 1279px) {
+  .framer-e9rxN.framer-v-ou95mp.framer-dxvjkb,
+  .framer-e9rxN.framer-v-1uivldt.framer-dxvjkb,
+  .framer-e9rxN.framer-v-qqp9ex.framer-dxvjkb,
+  .framer-e9rxN.framer-v-184jsh9.framer-dxvjkb {
+    padding-left: var(--page-pad-x) !important;
+    padding-right: var(--page-pad-x) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* More space between Get Started and hamburger */
+  .framer-e9rxN.framer-v-ou95mp .framer-29s8zc,
+  .framer-e9rxN.framer-v-1uivldt .framer-5vzw3d,
+  .framer-e9rxN.framer-v-qqp9ex .framer-5vzw3d,
+  .framer-e9rxN.framer-v-184jsh9 .framer-5vzw3d {
+    gap: 16px !important;
+  }
+}
+
 /* Desktop nav — fixed to top (hamburger only below 768px) */
 @media (min-width: 768px) {
   .framer-e9rxN.framer-v-dxvjkb.framer-dxvjkb {
@@ -1362,6 +1382,240 @@
   }
 }
 
+/* About Us — mobile: hero + section typography / padding */
+@media (max-width: 767px) {
+  .framer-tOMeX .framer-6lrc42,
+  .framer-tOMeX .framer-1ij73dg,
+  .framer-tOMeX .framer-6horic {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .framer-tOMeX .framer-6lrc42 p,
+  .framer-tOMeX .framer-1ij73dg p,
+  .framer-tOMeX .framer-6horic p,
+  .framer-tOMeX .framer-6lrc42 span,
+  .framer-tOMeX .framer-1ij73dg span,
+  .framer-tOMeX .framer-6horic span {
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+    --framer-font-size: 32px !important;
+    --framer-line-height: 40px !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  /*
+   * Story paragraph + Commitment sit OUTSIDE the hero (6s9wpb) as siblings
+   * under qwwcsw. Framer phone uses 24px here; do not zero it out.
+   * Match Our Philosophy (rgawlu) side inset.
+   */
+  .framer-tOMeX .framer-6s9wpb {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .framer-tOMeX .framer-s7baw4,
+  .framer-tOMeX .framer-1gc66x3 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  /* Other body blocks still had desktop 100px side padding — clear those */
+  .framer-tOMeX .framer-1l4wrr7,
+  .framer-tOMeX .framer-1vdn5dt,
+  .framer-tOMeX .framer-trzfni,
+  .framer-tOMeX .framer-1fnkbpb,
+  .framer-tOMeX .framer-hmkgpm {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  /* Section headings: allow wrap + match phone size (desktop 36px was leaking) */
+  .framer-tOMeX .framer-1ynlssq {
+    white-space: pre-wrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .framer-tOMeX .framer-1ynlssq p,
+  .framer-tOMeX .framer-1ynlssq span,
+  .framer-tOMeX .framer-xagwhl p,
+  .framer-tOMeX .framer-xagwhl span,
+  .framer-tOMeX .framer-1j76za4 p,
+  .framer-tOMeX .framer-1j76za4 span,
+  .framer-tOMeX .framer-1eeioki p,
+  .framer-tOMeX .framer-1eeioki span,
+  .framer-tOMeX .framer-qcrb4m p,
+  .framer-tOMeX .framer-qcrb4m span,
+  .framer-tOMeX .framer-msddws p,
+  .framer-tOMeX .framer-msddws span {
+    font-size: 24px !important;
+    line-height: 1.35 !important;
+    --framer-font-size: 24px !important;
+    --framer-line-height: 135% !important;
+    white-space: pre-wrap !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Body copy + headings: full width, left-aligned with section titles */
+  .framer-tOMeX .framer-wea0ay,
+  .framer-tOMeX .framer-xagwhl,
+  .framer-tOMeX .framer-wtiq9r,
+  .framer-tOMeX .framer-1j76za4,
+  .framer-tOMeX .framer-ju3h7n,
+  .framer-tOMeX .framer-1eeioki,
+  .framer-tOMeX .framer-e1rr7r,
+  .framer-tOMeX .framer-qcrb4m,
+  .framer-tOMeX .framer-1um0jhw,
+  .framer-tOMeX .framer-msddws,
+  .framer-tOMeX .framer-6eka2r,
+  .framer-tOMeX .framer-1chg5uw,
+  .framer-tOMeX .framer-1dnqbjl {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Distinctive value wrap: same side inset as Our Philosophy / white cards */
+  .framer-tOMeX .framer-eo8ex0 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  /*
+   * Wealth Creation dark card — fit text inside the card on phone.
+   * Desktop uses absolute layers + fixed widths that clip on mobile.
+   */
+  .framer-tOMeX .framer-1d5ja5r {
+    overflow: hidden !important;
+    height: auto !important;
+    min-height: 300px;
+    padding: 28px 20px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .framer-tOMeX .framer-i246uq {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    flex: none !important;
+    z-index: 2 !important;
+  }
+
+  .framer-tOMeX .framer-1ruvux1 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    gap: 20px !important;
+    justify-content: flex-start !important;
+  }
+
+  .framer-tOMeX .framer-lvtyeo,
+  .framer-tOMeX .framer-3o37i8 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .framer-tOMeX .framer-lvtyeo p,
+  .framer-tOMeX .framer-lvtyeo span {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+    --framer-font-size: 28px !important;
+    --framer-line-height: 125% !important;
+    white-space: pre-wrap !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Amount + subtitle use white-space: pre by default — force wrap */
+  .framer-tOMeX .framer-1haeq8w,
+  .framer-tOMeX .framer-71r3bi {
+    white-space: pre-wrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .framer-tOMeX .framer-1haeq8w p,
+  .framer-tOMeX .framer-1haeq8w span {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+    --framer-font-size: 30px !important;
+    --framer-line-height: 115% !important;
+    white-space: pre-wrap !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .framer-tOMeX .framer-71r3bi p,
+  .framer-tOMeX .framer-71r3bi span {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+    --framer-font-size: 14px !important;
+    --framer-line-height: 135% !important;
+    --framer-text-alignment: left !important;
+    text-align: left !important;
+    white-space: pre-wrap !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Background money image fills the card behind the text */
+  .framer-tOMeX .framer-4vr4l3 {
+    inset: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    aspect-ratio: unset !important;
+    object-fit: cover !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .framer-tOMeX .framer-7r89wn {
+    display: none !important;
+  }
+}
+
 /* About Us — tablet: philosophy + distinctive value share the same side inset */
 @media (min-width: 768px) and (max-width: 1199px) {
   .framer-tOMeX.framer-v-12pnnpj,
@@ -1503,5 +1757,128 @@
     padding: 20px !important;
     box-sizing: border-box !important;
     width: 100% !important;
+  }
+}
+
+/* KYC — phone + tablet: fluid width + wrap section titles (fixed 390/810px + white-space:pre overflow) */
+@media (max-width: 1279px) {
+  .framer-CGkRx.framer-16qfr5u,
+  .framer-CGkRx.framer-v-3ej0nh.framer-16qfr5u,
+  .framer-CGkRx.framer-v-i06d73.framer-16qfr5u,
+  .framer-CGkRx.framer-v-y5dttb.framer-16qfr5u {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .framer-CGkRx .framer-pdle3g,
+  .framer-CGkRx .framer-1ycw8ob {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .framer-cBez4.framer-8731wh,
+  .framer-cBez4.framer-v-1owjrpq.framer-8731wh,
+  .framer-cBez4.framer-v-1amghee.framer-8731wh,
+  .framer-cBez4.framer-v-1dyb4qj.framer-8731wh {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .framer-cBez4 .framer-zzhjnb,
+  .framer-cBez4 .framer-1489plx,
+  .framer-cBez4 .framer-1vmf5a3,
+  .framer-cBez4 .framer-1qej0tf,
+  .framer-cBez4 .framer-170szpf,
+  .framer-cBez4 .framer-mla7vn {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Section titles — wrap instead of clipping */
+  .framer-cBez4 .framer-ij7yzw,
+  .framer-cBez4 .framer-x89lr5,
+  .framer-cBez4 .framer-1v5xhbo {
+    white-space: pre-wrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .framer-cBez4 .framer-ij7yzw p,
+  .framer-cBez4 .framer-ij7yzw span,
+  .framer-cBez4 .framer-x89lr5 p,
+  .framer-cBez4 .framer-x89lr5 span,
+  .framer-cBez4 .framer-1v5xhbo p,
+  .framer-cBez4 .framer-1v5xhbo span {
+    font-size: 28px !important;
+    line-height: 1.35 !important;
+    --framer-font-size: 28px !important;
+    --framer-line-height: 135% !important;
+    white-space: pre-wrap !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .framer-cBez4 .framer-1y10xvr,
+  .framer-cBez4 .framer-8sedr3,
+  .framer-cBez4 .framer-1lm7rsb,
+  .framer-cBez4 .framer-1welggl,
+  .framer-cBez4 .framer-1lhdx9d,
+  .framer-cBez4 .framer-1sgkdgv,
+  .framer-cBez4 .framer-9japut,
+  .framer-cBez4 .framer-191s4gb,
+  .framer-cBez4 .framer-t0uk4t,
+  .framer-cBez4 .framer-1kjtn61,
+  .framer-cBez4 .framer-c9ugbq,
+  .framer-cBez4 .framer-1xdxv3v,
+  .framer-cBez4 .framer-dej031,
+  .framer-cBez4 .framer-wmsz14,
+  .framer-cBez4 .framer-1nb4hpr,
+  .framer-cBez4 .framer-1kiik03,
+  .framer-cBez4 .framer-1q0eclm,
+  .framer-cBez4 .framer-b26w1d,
+  .framer-cBez4 .framer-1janbm3,
+  .framer-cBez4 .framer-ygvf7o,
+  .framer-cBez4 .framer-1iisor2,
+  .framer-cBez4 .framer-1f9v2y1,
+  .framer-cBez4 .framer-1koom46,
+  .framer-cBez4 .framer-7p7kcy {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .framer-cBez4 .framer-ij7yzw p,
+  .framer-cBez4 .framer-ij7yzw span,
+  .framer-cBez4 .framer-x89lr5 p,
+  .framer-cBez4 .framer-x89lr5 span,
+  .framer-cBez4 .framer-1v5xhbo p,
+  .framer-cBez4 .framer-1v5xhbo span {
+    font-size: 24px !important;
+    --framer-font-size: 24px !important;
+  }
+}
+
+/* About Us team grid: 2 columns on mobile instead of 4 */
+@media (max-width: 767px) {
+  .framer-tOMeX.framer-v-iv3k2z .framer-1m375mr {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
   }
 }

@@ -10,7 +10,7 @@ export default function DisclosurePage() {
       <main className="max-w-[1440px] mx-auto pt-20 pb-40 px-6 md:px-20">
         <div className="flex flex-col gap-12">
           <DisclosureText.Responsive style={{ width: '100%' }} />
-          <DisclosureTable style={{ width: '100%' }} />
+          <DisclosureTable.Responsive style={{ width: '100%' }} />
         </div>
       </main>
       <Footer.Responsive style={{ width: '100%' }} />

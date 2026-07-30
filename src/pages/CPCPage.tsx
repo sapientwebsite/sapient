@@ -1,6 +1,5 @@
 import Navigation from '../framer/navigation';
 import Footer from '../framer/footer';
-import CoffeeText from '../framer/coffe-pe-compounding-text';
 import { useRef } from 'react';
 
 const ManagerCard = ({
@@ -72,8 +71,13 @@ export default function CPCPage() {
       <main className="w-full max-w-[1440px] mx-auto pt-10 sm:pt-16 lg:pt-20 pb-24 sm:pb-32 lg:pb-40 px-4 sm:px-6 md:px-12 lg:px-20 relative">
         <div className="flex flex-col gap-10 sm:gap-12 lg:gap-16">
           <div className="flex flex-col gap-6 sm:gap-8 lg:flex-row lg:justify-between lg:items-end">
-            <div className="w-full min-w-0 lg:flex-1 lg:max-w-[720px]">
-              <CoffeeText.Responsive style={{ width: '100%', maxWidth: '100%' }} />
+            <div className="w-full min-w-0 lg:flex-1 lg:max-w-[720px] flex flex-col gap-2 sm:gap-3 lg:gap-4">
+              <h1 className="text-[28px] sm:text-[40px] lg:text-[56px] font-bold text-[#0F172A] leading-[120%] tracking-[0.01em]" style={{ fontFamily: '"Plus Jakarta Sans", sans-serif' }}>
+                Coffee pe compounding
+              </h1>
+              <p className="text-[13px] sm:text-[16px] lg:text-[20px] font-medium text-[#334155] leading-[150%] tracking-[0.01em]" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                Our associate partners and we discuss what is working right or wrong
+              </p>
             </div>
             <div className="flex gap-3 sm:gap-4 shrink-0 lg:mb-2">
               <button
