@@ -483,12 +483,9 @@
     position: relative !important;
   }
 
-  /* Phone photos — kill absolute offset letterboxing */
+  /* Phone photos — kill absolute offset letterboxing (images only, not titles/steps) */
   .framer-sPhs5 .framer-csaxk2,
   .framer-sPhs5 .framer-14svfa0,
-  .framer-sPhs5 .framer-1ukajtg,
-  .framer-sPhs5 .framer-1nkibni,
-  .framer-sPhs5 .framer-1wcs8hr,
   .framer-sPhs5 .framer-ggjar1,
   .framer-sPhs5 .framer-d2q5sz,
   .framer-sPhs5 .framer-y02nsx img,
@@ -518,6 +515,60 @@
     object-fit: cover !important;
     object-position: center !important;
     position: absolute !important;
+  }
+
+  /* Step labels + titles: keep in normal flow so they don't stack on top of each other */
+  .framer-sPhs5 .framer-1ukajtg,
+  .framer-sPhs5 .framer-1nkibni,
+  .framer-sPhs5 .framer-1wcs8hr,
+  .framer-sPhs5 .framer-1ae5jwz,
+  .framer-sPhs5 .framer-rg9ur0,
+  .framer-sPhs5 .framer-955ml1,
+  .framer-sPhs5 .framer-1afnfsd,
+  .framer-sPhs5 .framer-hr8dlb,
+  .framer-sPhs5 .framer-1u3a9q5,
+  .framer-sPhs5 .framer-1fp3ya9,
+  .framer-sPhs5 .framer-1hb30pt {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    white-space: pre-wrap !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .framer-sPhs5 .framer-1ukajtg p,
+  .framer-sPhs5 .framer-1nkibni p,
+  .framer-sPhs5 .framer-1wcs8hr p,
+  .framer-sPhs5 .framer-1ae5jwz p,
+  .framer-sPhs5 .framer-rg9ur0 p,
+  .framer-sPhs5 .framer-955ml1 p,
+  .framer-sPhs5 .framer-1afnfsd p,
+  .framer-sPhs5 .framer-hr8dlb p,
+  .framer-sPhs5 .framer-1u3a9q5 p,
+  .framer-sPhs5 .framer-1fp3ya9 p,
+  .framer-sPhs5 .framer-1hb30pt p,
+  .framer-sPhs5 .framer-1ukajtg span,
+  .framer-sPhs5 .framer-1nkibni span,
+  .framer-sPhs5 .framer-1wcs8hr span,
+  .framer-sPhs5 .framer-1ae5jwz span,
+  .framer-sPhs5 .framer-rg9ur0 span,
+  .framer-sPhs5 .framer-955ml1 span,
+  .framer-sPhs5 .framer-1afnfsd span,
+  .framer-sPhs5 .framer-hr8dlb span,
+  .framer-sPhs5 .framer-1u3a9q5 span,
+  .framer-sPhs5 .framer-1fp3ya9 span,
+  .framer-sPhs5 .framer-1hb30pt span {
+    white-space: pre-wrap !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
   }
 
   .framer-sPhs5 .framer-rg9ur0,
