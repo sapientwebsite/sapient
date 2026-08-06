@@ -315,7 +315,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 	};
 	const resourceYears = [
 		{
-			href: "https://drive.google.com/file/d/1T1AQnZIZLdQ4W95_tTHX4zXytB-hgDo0/view",
+			href: "https://drive.google.com/file/d/19J1KoeexWjVbiLdAM72OrNLhI0TA9BMj/view",
 			label: "F.Y. 2026-27",
 			nodeId: "mobileResourceFy202627",
 		},
@@ -327,7 +327,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 	];
 	const investmentAdvisoryYears = [
 		{
-			href: "https://drive.google.com/file/d/1T1AQnZIZLdQ4W95_tTHX4zXytB-hgDo0/view",
+			href: "https://drive.google.com/file/d/19J1KoeexWjVbiLdAM72OrNLhI0TA9BMj/view",
 			label: "F.Y. 2026-27",
 			nodeId: "mobileFy202627",
 		},
@@ -976,7 +976,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																		>
 																			{[
 																				{
-																					href: "https://drive.google.com/file/d/1T1AQnZIZLdQ4W95_tTHX4zXytB-hgDo0/view",
+																					href: "https://drive.google.com/file/d/19J1KoeexWjVbiLdAM72OrNLhI0TA9BMj/view",
 																					label: "F.Y. 2026-27",
 																					nodeId: "TWcgSBdM_",
 																					layoutId: "Mj0wFeIh0",
