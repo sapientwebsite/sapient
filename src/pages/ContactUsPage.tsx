@@ -8,14 +8,14 @@ const offices = [
     company: 'Sapient Wealth Advisors and Brokers Pvt Ltd.',
     address:
       '201, Nav Vani Hsg Society, Opposite Kailash Plaza, Above IndusInd Bank, Ghatkopar East, Mumbai - 400077.',
-    landline: '022 - 4011 1950',
+    landline: '022 4011 1950',
   },
   {
     title: 'Branch Office - Nariman Point',
     company: 'Sapient Wealth Advisors & Brokers Pvt. Ltd.',
     address:
       '20A, 20th Floor, Nirmal Building, Next to Inox, Nariman Point, Mumbai - 400021',
-    landline: '022 44741992',
+    landline: '022 4474 1992',
   },
 ];
 
