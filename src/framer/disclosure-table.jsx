@@ -4468,7 +4468,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 															<RichText
 																__fromCanvasComponent={true}
 																className={"framer-o91ypa"}
-																data-framer-name={"Mobile no: 93720 47538"}
+																data-framer-name={"Mobile no: 9821118920"}
 																fonts={["GF;Satoshi-500"]}
 																layoutDependency={layoutDependency}
 																layoutId={"oU3OqvLw1"}
@@ -4501,7 +4501,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																		>
 																			{"Mobile no:"}
 																		</motion.span>
-																		{" 93720 47538"}
+																		{" 9821118920"}
 																	</motion.p>
 																</React.Fragment>
 															</RichText>
@@ -4588,7 +4588,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																__fromCanvasComponent={true}
 																className={"framer-18t6egn"}
 																data-framer-name={
-																	"Email ID: ekta@sapientwealth.co.in"
+																	"Email ID: dhiren.chheda@sapientwealth.co.in"
 																}
 																fonts={["GF;Satoshi-500", "GF;Satoshi-700"]}
 																layoutDependency={layoutDependency}
@@ -4630,7 +4630,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																		>
 																			{" "}
 																		</motion.span>
-																		{"ekta@sapientwealth.co.in"}
+																		{"dhiren.chheda@sapientwealth.co.in"}
 																	</motion.p>
 																</React.Fragment>
 															</RichText>
@@ -4644,7 +4644,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 															<RichText
 																__fromCanvasComponent={true}
 																className={"framer-19fjzue"}
-																data-framer-name={"Name: Ms. Ekta Karani"}
+																data-framer-name={"Name: Mr. Dhiren Chheda"}
 																fonts={["GF;Satoshi-500"]}
 																layoutDependency={layoutDependency}
 																layoutId={"pfaRPg0Zu"}
@@ -4676,14 +4676,14 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																		>
 																			{" Name:"}
 																		</motion.span>
-																		{" Ms. Ekta Karani"}
+																		{" Mr. Dhiren Chheda"}
 																	</motion.p>
 																</React.Fragment>
 															</RichText>
 															<RichText
 																__fromCanvasComponent={true}
 																className={"framer-1eej4xw"}
-																data-framer-name={"Mobile no: 72084 61709"}
+																data-framer-name={"Mobile no: 93213 35151"}
 																fonts={["GF;Satoshi-500"]}
 																layoutDependency={layoutDependency}
 																layoutId={"KBwW3V_bf"}
@@ -4715,7 +4715,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																		>
 																			{"Mobile no:"}
 																		</motion.span>
-																		{" 72084 61709"}
+																		{" 93213 35151"}
 																	</motion.p>
 																</React.Fragment>
 															</RichText>
@@ -5961,8 +5961,9 @@ var css = [
 	".framer-LYMMr .framer-slvikz { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 20px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 197px; }",
 	".framer-LYMMr .framer-1c8yja6 { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 197px; word-break: break-word; word-wrap: break-word; }",
 	".framer-LYMMr .framer-xrggsg { align-content: center; align-items: center; display: flex; flex: 1 0 0px; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: visible; padding: 16px 12px 16px 12px; position: relative; width: 1px; }",
-	".framer-LYMMr .framer-1aoc8mp { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 20px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 224px; }",
-	".framer-LYMMr .framer-1dmpueo, .framer-LYMMr .framer-18t6egn { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 224px; word-break: break-word; word-wrap: break-word; }",
+	".framer-LYMMr .framer-1aoc8mp { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 20px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: min-content; min-width: 280px; }",
+	".framer-LYMMr .framer-1dmpueo { flex: none; height: auto; position: relative; white-space: nowrap; width: auto; }",
+	".framer-LYMMr .framer-18t6egn { flex: none; height: auto; position: relative; white-space: nowrap; width: auto; }",
 	".framer-LYMMr .framer-u38oes { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 20px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 160px; }",
 	".framer-LYMMr .framer-1eej4xw { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 160px; word-break: break-word; word-wrap: break-word; }",
 	".framer-LYMMr .framer-1152n85 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: 1131px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 1152px; }",

@@ -28,14 +28,29 @@ export default function App() {
     const handleLinkClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const anchor = target.closest('a');
-      if (anchor && anchor.href.startsWith(window.location.origin)) {
-        // Internal link
-        const url = new URL(anchor.href);
-        if (url.pathname !== window.location.pathname) {
-          e.preventDefault();
-          window.history.pushState({}, '', url.pathname);
-          setCurrentPath(url.pathname);
-        }
+      if (!anchor || !anchor.href.startsWith(window.location.origin)) return;
+
+      // Let new-tab / download / static-file links use native browser behavior
+      const url = new URL(anchor.href);
+      const isStaticFile = /\.(pdf|png|jpe?g|gif|webp|svg|zip|docx?|xlsx?)$/i.test(
+        url.pathname,
+      );
+      if (
+        anchor.target === '_blank' ||
+        anchor.hasAttribute('download') ||
+        isStaticFile ||
+        e.metaKey ||
+        e.ctrlKey ||
+        e.shiftKey ||
+        e.altKey
+      ) {
+        return;
+      }
+
+      if (url.pathname !== window.location.pathname) {
+        e.preventDefault();
+        window.history.pushState({}, '', url.pathname);
+        setCurrentPath(url.pathname);
       }
     };
 

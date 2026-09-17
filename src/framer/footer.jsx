@@ -923,7 +923,21 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																	"var(--extracted-r6o4lv, rgb(255, 255, 255))",
 															}}
 														>
-															{"Code of Conduct"}
+															<Link
+																href={
+																	"/code-of-conduct/Code%20of%20Conduct%20for%20Mutual%20Fund%20Distributors.pdf"
+																}
+																nodeId={"XghYJzMzR"}
+																openInNewTab={true}
+																smoothScroll={false}
+															>
+																<motion.a
+																	className={"framer-styles-preset-jc6s9o"}
+																	data-styles-preset={"RPI55sIY7"}
+																>
+																	{"Code of Conduct"}
+																</motion.a>
+															</Link>
 														</motion.p>
 													</React.Fragment>
 												</RichText>
@@ -1717,7 +1731,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														>
 															<Link
 																href={
-																	"https://www.amfiindia.com/Themes/Theme1/downloads/RevisedCodeofConductforMutualFundDistributors-April2022.pdf"
+																	"/code-of-conduct/Code%20of%20Conduct%20for%20Mutual%20Fund%20Distributors.pdf"
 																}
 																nodeId={"AF_UFYP51"}
 																openInNewTab={true}
