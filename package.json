@@ -9,11 +9,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "node server.js",
     "framer": "unframer af460206e137e8d8 --outDir src/framer"
   },
   "dependencies": {
     "@motionone/dom": "^10.18.0",
     "@motionone/utils": "^10.18.0",
+    "express": "^4.22.3",
     "react": "latest",
     "react-dom": "latest",
     "unframer": "latest"

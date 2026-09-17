@@ -101,6 +101,98 @@ var formVariants = (form, variants, currentVariant) => {
 			return currentVariant;
 	}
 };
+var TOPIC_OF_ENQUIRY = {
+	personalHealth:
+		"Persona Health Advisory (\u20B95 Cr to \u20B9100 Cr)",
+	familyOffice: "Family Office Advisory (\u20B9 100 Cr & Above)",
+	heritage:
+		"HERitage - Wealth Advisory for Women (\u20B910 Cr & Above)",
+};
+function isEnquiryFormComplete(form) {
+	const data = new FormData(form);
+	const name = String(data.get("Name") || "").trim();
+	const phone = String(data.get("Phone Number") || "").trim();
+	const email = String(data.get("Email") || "").trim();
+	const topic = String(
+		data.get("Topic of Enquiry") || data.get("Radio") || "",
+	).trim();
+	const phoneDigits = phone.replace(/\D/g, "");
+	const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+	return Boolean(name && phoneDigits.length >= 10 && emailOk && topic);
+}
+function EnquiryFormContainer({ children, className, ...rest }) {
+	const [formState, setFormState] = React.useState({ state: "incomplete" });
+	const syncFormValidity = (form) => {
+		if (!form) return;
+		setFormState((prev) => {
+			if (
+				prev.state === "pending" ||
+				prev.state === "success"
+			) {
+				return prev;
+			}
+			const nextState = isEnquiryFormComplete(form)
+				? "complete"
+				: "incomplete";
+			return prev.state === nextState ? prev : { state: nextState };
+		});
+	};
+	const handleFormChange = (event) => {
+		syncFormValidity(event.currentTarget);
+	};
+	const handleSubmit = async (event) => {
+		event.preventDefault();
+		if (
+			formState.state === "pending" ||
+			formState.state === "incomplete" ||
+			!isEnquiryFormComplete(event.currentTarget)
+		) {
+			setFormState({ state: "incomplete" });
+			return;
+		}
+		setFormState({ state: "pending" });
+		try {
+			const data = new FormData(event.currentTarget);
+			const payload = {
+				Name: String(data.get("Name") || "").trim(),
+				"Phone Number": String(data.get("Phone Number") || "").trim(),
+				"Work Email": String(data.get("Email") || "").trim(),
+				"Topic of Enquiry": String(
+					data.get("Topic of Enquiry") || data.get("Radio") || "",
+				).trim(),
+			};
+			const response = await fetch("/api/contact", {
+				method: "POST",
+				headers: {
+					Accept: "application/json",
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(payload),
+			});
+			const result = await response.json().catch(() => ({}));
+			if (!response.ok || !result.ok) {
+				throw new Error(result.error || "Form submission failed");
+			}
+			setFormState({ state: "success" });
+			window.history.pushState({}, "", "/success-form");
+			window.dispatchEvent(new PopStateEvent("popstate"));
+		} catch (error) {
+			console.error(error);
+			setFormState({ state: "error" });
+		}
+	};
+	return (
+		<form
+			className={className}
+			onChange={handleFormChange}
+			onInput={handleFormChange}
+			onSubmit={handleSubmit}
+			{...rest}
+		>
+			{typeof children === "function" ? children(formState) : children}
+		</form>
+	);
+}
 var Transition = ({ value, children }) => {
 	const config = React.useContext(MotionConfigContext);
 	const transition = value ?? config.transition;
@@ -662,17 +754,9 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 							layoutDependency={layoutDependency}
 							layoutId={"C0ahCv3qH"}
 						>
-							<FormContainer
-								action={
-									"https://api.framer.com/forms/v1/forms/5b09f922-e852-4383-b33a-24e76ca20d4c/submit"
-								}
+							<EnquiryFormContainer
 								className={"framer-yj9jvt"}
-								layoutDependency={layoutDependency}
-								layoutId={"QSYijZ6As"}
-								nodeId={"QSYijZ6As"}
-								redirectUrl={{
-									webPageId: "Cq_gI6RE_",
-								}}
+								data-framer-name={"Enquiry Form"}
 							>
 								{(formState) => (
 									<_Fragment>
@@ -904,8 +988,8 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												<FormBooleanInput
 													className={"framer-dr78ck"}
 													defaultChecked={false}
-													defaultValue={"Option 1"}
-													inputName={"Radio"}
+													defaultValue={TOPIC_OF_ENQUIRY.personalHealth}
+													inputName={"Topic of Enquiry"}
 													layoutDependency={layoutDependency}
 													layoutId={"cspMTii77"}
 													style={{
@@ -976,8 +1060,8 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												<FormBooleanInput
 													className={"framer-1bpiqlp"}
 													defaultChecked={false}
-													defaultValue={"Option 2"}
-													inputName={"Radio"}
+													defaultValue={TOPIC_OF_ENQUIRY.familyOffice}
+													inputName={"Topic of Enquiry"}
 													layoutDependency={layoutDependency}
 													layoutId={"lziQ2Uxrx"}
 													style={{
@@ -1046,8 +1130,8 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												<FormBooleanInput
 													className={"framer-1c2f9k9"}
 													defaultChecked={false}
-													defaultValue={"Option 3"}
-													inputName={"Radio"}
+													defaultValue={TOPIC_OF_ENQUIRY.heritage}
+													inputName={"Topic of Enquiry"}
 													layoutDependency={layoutDependency}
 													layoutId={"AQdqHYH_6"}
 													style={{
@@ -1136,6 +1220,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												scopeId={"n5MID2i3G"}
 											>
 												{_jsx(stdin_default, {
+													disabled:
+														formState.state ===
+															"incomplete" ||
+														formState.state === "pending",
 													height: "100%",
 													id: "DDJw682ik",
 													layoutId: "DDJw682ik",
@@ -1160,7 +1248,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										</ComponentViewportProvider>
 									</_Fragment>
 								)}
-							</FormContainer>
+							</EnquiryFormContainer>
 						</motion.div>
 					</motion.div>
 				</Transition>
