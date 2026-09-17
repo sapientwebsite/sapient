@@ -25,6 +25,7 @@
  */
 import { stdin_default } from "./chunks/chunk-TVJC6QOI.js";
 import { routes } from "./chunks/chunk-PZVC6U2W.js";
+import airtableService from "../services/airtableService";
 
 // virtual:contact-us
 import { Fragment as Fragment2 } from "react";
@@ -161,17 +162,9 @@ function EnquiryFormContainer({ children, className, ...rest }) {
 					data.get("Topic of Enquiry") || data.get("Radio") || "",
 				).trim(),
 			};
-			const response = await fetch("/api/contact", {
-				method: "POST",
-				headers: {
-					Accept: "application/json",
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(payload),
-			});
-			const result = await response.json().catch(() => ({}));
-			if (!response.ok || !result.ok) {
-				throw new Error(result.error || "Form submission failed");
+			const result = await airtableService.sendSubmission(payload);
+			if (!result) {
+				throw new Error("Form submission failed");
 			}
 			setFormState({ state: "success" });
 			window.history.pushState({}, "", "/success-form");
