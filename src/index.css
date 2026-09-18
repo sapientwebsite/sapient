@@ -6,6 +6,17 @@
   --page-pad-x: 24px;
 }
 
+/* Contact Us — desktop: center the 1440px content+form block on wide screens */
+@media (min-width: 1280px) {
+  .framer-Qq5Q2.framer-3t6a6w {
+    width: 100% !important;
+    max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+}
+
 /* Contact Us — mobile: hide left panel, show only form, single column */
 @media (max-width: 767px) {
   .framer-Qq5Q2.framer-3t6a6w,

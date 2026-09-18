@@ -121,6 +121,21 @@ function isEnquiryFormComplete(form) {
 	const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 	return Boolean(name && phoneDigits.length >= 10 && emailOk && topic);
 }
+function sanitizePhoneNumber(value) {
+	return String(value || "").replace(/[^0-9+ ]/g, "");
+}
+function PhoneNumberInput(props) {
+	const [value, setValue] = React.useState("");
+	return (
+		<FormPlainTextInput
+			{...props}
+			value={value}
+			onChange={(event) => {
+				setValue(sanitizePhoneNumber(event.target.value));
+			}}
+		/>
+	);
+}
 function EnquiryFormContainer({ children, className, ...rest }) {
 	const [formState, setFormState] = React.useState({ state: "incomplete" });
 	const syncFormValidity = (form) => {
@@ -141,6 +156,18 @@ function EnquiryFormContainer({ children, className, ...rest }) {
 	const handleFormChange = (event) => {
 		syncFormValidity(event.currentTarget);
 	};
+	const handleBeforeInput = (event) => {
+		const target = event.target;
+		if (
+			!(target instanceof HTMLInputElement) ||
+			target.name !== "Phone Number"
+		) {
+			return;
+		}
+		if (event.data && /[^0-9+ ]/.test(event.data)) {
+			event.preventDefault();
+		}
+	};
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		if (
@@ -156,7 +183,7 @@ function EnquiryFormContainer({ children, className, ...rest }) {
 			const data = new FormData(event.currentTarget);
 			const payload = {
 				Name: String(data.get("Name") || "").trim(),
-				"Phone Number": String(data.get("Phone Number") || "").trim(),
+				"Phone Number": sanitizePhoneNumber(data.get("Phone Number")).trim(),
 				"Work Email": String(data.get("Email") || "").trim(),
 				"Topic of Enquiry": String(
 					data.get("Topic of Enquiry") || data.get("Radio") || "",
@@ -177,6 +204,7 @@ function EnquiryFormContainer({ children, className, ...rest }) {
 	return (
 		<form
 			className={className}
+			onBeforeInput={handleBeforeInput}
 			onChange={handleFormChange}
 			onInput={handleFormChange}
 			onSubmit={handleSubmit}
@@ -849,12 +877,12 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													</motion.p>
 												</React.Fragment>
 											</RichText>
-											<FormPlainTextInput
+											<PhoneNumberInput
 												className={"framer-10hni77"}
 												inputName={"Phone Number"}
 												layoutDependency={layoutDependency}
 												layoutId={"q1iZBC9lT"}
-												placeholder={"+91"}
+												placeholder={"Enter phone number"}
 												required={true}
 												style={{
 													"--framer-input-background": "rgb(255, 255, 255)",
@@ -871,7 +899,8 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													"--framer-input-border-top-width": "1px",
 													"--framer-input-font-color": "rgb(38, 38, 38)",
 													"--framer-input-icon-color": "rgb(153, 153, 153)",
-													"--framer-input-placeholder-color": "rgb(38, 38, 38)",
+													"--framer-input-placeholder-color":
+														"rgb(148, 163, 184)",
 												}}
 												type={"tel"}
 											/>
