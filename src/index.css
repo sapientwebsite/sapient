@@ -6,14 +6,49 @@
   --page-pad-x: 24px;
 }
 
-/* Contact Us — desktop: center the 1440px content+form block on wide screens */
+/* Contact Us — desktop: share page gutters with offices (px-20), 2 equal columns */
 @media (min-width: 1280px) {
   .framer-Qq5Q2.framer-3t6a6w {
     width: 100% !important;
-    max-width: 1440px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     box-sizing: border-box !important;
+    gap: 64px !important;
+  }
+
+  .framer-Qq5Q2 .framer-1xr7jmb {
+    flex: 1 1 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    padding: 64px 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .framer-Qq5Q2 .framer-1ouc32s {
+    flex: 1 1 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    padding: 64px 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .framer-Qq5Q2 .framer-l0vs05,
+  .framer-Qq5Q2 .framer-1yevf3g,
+  .framer-Qq5Q2 .framer-16de9hp,
+  .framer-Qq5Q2 .framer-61buql {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .framer-Qq5Q2 .framer-10lbr76 {
+    white-space: normal !important;
+    word-break: break-word !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
@@ -34,11 +69,11 @@
     display: none !important;
   }
 
-  /* Form panel full width */
+  /* Form panel full width — page wrapper already provides gutters */
   .framer-Qq5Q2 .framer-1ouc32s {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 24px 24px 48px 24px !important;
+    padding: 24px 0 48px 0 !important;
     box-sizing: border-box !important;
   }
 
@@ -61,15 +96,16 @@
     flex-direction: row !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
+    gap: 40px !important;
   }
 
-  /* Left panel: shrinkable, text wraps instead of clipping */
+  /* Left panel: shrinkable — page wrapper already provides gutters */
   .framer-Qq5Q2 .framer-1xr7jmb {
     flex: 1 1 0 !important;
     width: 0 !important;
     min-width: 0 !important;
     max-width: 50% !important;
-    padding: 40px 24px !important;
+    padding: 40px 0 !important;
     box-sizing: border-box !important;
     overflow: visible !important;
   }
@@ -80,7 +116,7 @@
     width: 0 !important;
     min-width: 0 !important;
     max-width: 50% !important;
-    padding: 40px 24px !important;
+    padding: 40px 0 !important;
     box-sizing: border-box !important;
     overflow: visible !important;
   }
