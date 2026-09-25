@@ -13,6 +13,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import DisclaimerPage from './pages/DisclaimerPage';
 import KYCPage from './pages/KYCPage';
 import BlogDetailPage from './pages/BlogDetailPage';
+import IFSCPage from './pages/IFSCPage';
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -131,6 +132,14 @@ export default function App() {
 
   if (currentPath === '/kyc') {
     return <KYCPage />;
+  }
+
+  if (
+    currentPath === '/ifsc' ||
+    currentPath === '/ifsc-fme' ||
+    currentPath === '/gift-ifsc'
+  ) {
+    return <IFSCPage />;
   }
 
   return <HomePage />;

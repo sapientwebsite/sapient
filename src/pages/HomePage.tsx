@@ -54,6 +54,26 @@ export default function HomePage() {
 
       <PathToFinancialFreedom.Responsive style={{ width: '100%' }} />
       <FAQ.Responsive style={{ width: '100%' }} />
+
+      {/* Conspicuous homepage link for parent-hosted IFSC FME webpage */}
+      <div className="w-full self-stretch bg-[#17231E]">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-5 sm:py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <p
+            className="text-[14px] sm:text-[16px] text-white/90 leading-[150%]"
+            style={{ fontFamily: '"Satoshi", sans-serif' }}
+          >
+            Sapient Wealth IFSC LLP · IFSCA Reg. No. FDM2026FNR0966
+          </p>
+          <a
+            href="/ifsc"
+            className="shrink-0 inline-flex items-center justify-center rounded-full bg-[#E5EBD1] text-[#17231E] px-5 py-2.5 text-[13px] sm:text-[14px] font-semibold hover:bg-white transition-colors"
+            style={{ fontFamily: '"Satoshi", sans-serif' }}
+          >
+            Gift City
+          </a>
+        </div>
+      </div>
+
       <FooterFramerComponent.Responsive style={{ width: '100%' }} />
     </div>
   );

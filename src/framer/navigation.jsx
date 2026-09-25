@@ -852,6 +852,58 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												</React.Fragment>
 											</RichText>
 										</motion.div>
+										<motion.div
+											className={"framer-1alxw4c"}
+											data-framer-name={"Gift City"}
+											layoutDependency={layoutDependency}
+											layoutId={"giftCityNavDesktop"}
+										>
+											<RichText
+												__fromCanvasComponent={true}
+												className={"framer-1cpjlkc"}
+												data-framer-name={"Gift City"}
+												fonts={["FS;Satoshi-medium"]}
+												layoutDependency={layoutDependency}
+												layoutId={"giftCityNavDesktopText"}
+												style={{
+													"--extracted-r6o4lv": "rgb(255, 255, 255)",
+													"--framer-paragraph-spacing": "0px",
+												}}
+												verticalAlignment={"top"}
+												withExternalLayout={true}
+											>
+												<React.Fragment>
+													<motion.p
+														style={{
+															"--font-selector": "RlM7U2F0b3NoaS1tZWRpdW0=",
+															"--framer-font-family":
+																'"Satoshi", "Satoshi Placeholder", sans-serif',
+															"--framer-font-weight": "500",
+															"--framer-line-height": "120%",
+															"--framer-text-color":
+																"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+														}}
+													>
+														<Link
+															href={"/ifsc"}
+															motionChild={true}
+															nodeId={"giftCityNavDesktopText"}
+															openInNewTab={false}
+															relValues={[]}
+															scopeId={"dZbRlifrz"}
+															smoothScroll={false}
+														>
+															<motion.a
+																className={"framer-styles-preset-jc6s9o"}
+																data-styles-preset={"RPI55sIY7"}
+															>
+																{"Gift City"}
+															</motion.a>
+														</Link>
+													</motion.p>
+												</React.Fragment>
+											</RichText>
+										</motion.div>
 										<Overlay
 											blockDocumentScrolling={false}
 											dismissWithEsc={false}
@@ -1960,6 +2012,51 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													data-styles-preset={"RPI55sIY7"}
 												>
 													{"About"}
+												</motion.a>
+											</Link>
+										</motion.p>
+									</React.Fragment>
+								</RichText>
+								<RichText
+									__fromCanvasComponent={true}
+									className={"framer-2cydrd"}
+									fonts={["FS;Satoshi-regular"]}
+									layoutDependency={layoutDependency}
+									layoutId={"giftCityNavMobile"}
+									style={{
+										"--extracted-r6o4lv": "rgb(255, 255, 255)",
+										"--framer-paragraph-spacing": "0px",
+									}}
+									verticalAlignment={"top"}
+									withExternalLayout={true}
+								>
+									<React.Fragment>
+										<motion.p
+											style={{
+												"--font-selector": "RlM7U2F0b3NoaS1yZWd1bGFy",
+												"--framer-font-family":
+													'"Satoshi", "Satoshi Placeholder", sans-serif',
+												"--framer-font-size": "24px",
+												"--framer-line-height": "1.5em",
+												"--framer-text-alignment": "left",
+												"--framer-text-color":
+													"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+											}}
+										>
+											<Link
+												href={"/ifsc"}
+												motionChild={true}
+												nodeId={"giftCityNavMobile"}
+												openInNewTab={false}
+												relValues={[]}
+												scopeId={"dZbRlifrz"}
+												smoothScroll={false}
+											>
+												<motion.a
+													className={"framer-styles-preset-jc6s9o"}
+													data-styles-preset={"RPI55sIY7"}
+												>
+													{"Gift City"}
 												</motion.a>
 											</Link>
 										</motion.p>

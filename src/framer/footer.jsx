@@ -689,6 +689,48 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														</motion.p>
 													</React.Fragment>
 												</RichText>
+												<RichText
+													__fromCanvasComponent={true}
+													className={"framer-157d2dt"}
+													data-framer-name={"IFSC"}
+													fonts={["FS;Satoshi-regular"]}
+													layoutDependency={layoutDependency}
+													layoutId={"ifscFooterLinkDesktop"}
+													style={{
+														"--extracted-r6o4lv": "rgb(255, 255, 255)",
+														"--framer-paragraph-spacing": "15px",
+													}}
+													verticalAlignment={"top"}
+													withExternalLayout={true}
+												>
+													<React.Fragment>
+														<motion.p
+															style={{
+																"--font-selector": "RlM7U2F0b3NoaS1yZWd1bGFy",
+																"--framer-font-family":
+																	'"Satoshi", "Satoshi Placeholder", sans-serif',
+																"--framer-font-size": "14px",
+																"--framer-line-height": "150%",
+																"--framer-text-color":
+																	"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+															}}
+														>
+															<Link
+																href={"/ifsc"}
+																nodeId={"ifscFooterLinkDesktop"}
+																openInNewTab={false}
+																smoothScroll={false}
+															>
+																<motion.a
+																	className={"framer-styles-preset-jc6s9o"}
+																	data-styles-preset={"RPI55sIY7"}
+																>
+																	{"Gift City"}
+																</motion.a>
+															</Link>
+														</motion.p>
+													</React.Fragment>
+												</RichText>
 											</motion.div>
 											<motion.div
 												className={"framer-z4rugq"}
@@ -1490,6 +1532,48 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																	data-styles-preset={"RPI55sIY7"}
 																>
 																	{"KYC"}
+																</motion.a>
+															</Link>
+														</motion.p>
+													</React.Fragment>
+												</RichText>
+												<RichText
+													__fromCanvasComponent={true}
+													className={"framer-1rfujpx"}
+													data-framer-name={"IFSC"}
+													fonts={["FS;Satoshi-regular"]}
+													layoutDependency={layoutDependency}
+													layoutId={"ifscFooterLinkMobile"}
+													style={{
+														"--extracted-r6o4lv": "rgb(255, 255, 255)",
+														"--framer-paragraph-spacing": "15px",
+													}}
+													verticalAlignment={"top"}
+													withExternalLayout={true}
+												>
+													<React.Fragment>
+														<motion.p
+															style={{
+																"--font-selector": "RlM7U2F0b3NoaS1yZWd1bGFy",
+																"--framer-font-family":
+																	'"Satoshi", "Satoshi Placeholder", sans-serif',
+																"--framer-font-size": "14px",
+																"--framer-line-height": "150%",
+																"--framer-text-color":
+																	"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+															}}
+														>
+															<Link
+																href={"/ifsc"}
+																nodeId={"ifscFooterLinkMobile"}
+																openInNewTab={false}
+																smoothScroll={false}
+															>
+																<motion.a
+																	className={"framer-styles-preset-jc6s9o"}
+																	data-styles-preset={"RPI55sIY7"}
+																>
+																	{"Gift City"}
 																</motion.a>
 															</Link>
 														</motion.p>
