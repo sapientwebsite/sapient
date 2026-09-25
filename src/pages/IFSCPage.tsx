@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Navigation from '../framer/navigation';
 import Footer from '../framer/footer';
+import WebsiteDeclaration from '../components/WebsiteDeclaration';
 import {
   activities,
   contact,
@@ -102,6 +103,7 @@ export default function IFSCPage() {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-[#FDFCF9]">
+      <WebsiteDeclaration />
       <Navigation.Responsive style={{ width: '100%' }} />
 
       <header className="relative w-full overflow-hidden bg-[#17231E] text-white">
@@ -406,7 +408,7 @@ export default function IFSCPage() {
                   <tbody>
                     {serviceProviders.map((sp) => (
                       <tr
-                        key={sp.type}
+                        key={`${sp.type}-${sp.name}`}
                         className="border-t border-[#17231E]/08"
                       >
                         <td
@@ -459,22 +461,26 @@ export default function IFSCPage() {
                         {person.designation}
                       </p>
                     </div>
-                    <div className="flex flex-col gap-1.5 pt-2 border-t border-[#17231E]/10">
-                      <a
-                        href={`mailto:${person.email}`}
-                        className="text-[14px] text-[#17231E] underline decoration-[#17231E]/25 underline-offset-4 hover:decoration-[#17231E]"
-                        style={{ fontFamily: fontBody }}
-                      >
-                        {person.email}
-                      </a>
-                      <a
-                        href={`tel:${person.telephone.replace(/\s/g, '')}`}
-                        className="text-[14px] text-[#17231E]/80"
-                        style={{ fontFamily: fontBody }}
-                      >
-                        {person.telephone}
-                      </a>
-                    </div>
+                    {'email' in person && person.email ? (
+                      <div className="flex flex-col gap-1.5 pt-2 border-t border-[#17231E]/10">
+                        <a
+                          href={`mailto:${person.email}`}
+                          className="text-[14px] text-[#17231E] underline decoration-[#17231E]/25 underline-offset-4 hover:decoration-[#17231E]"
+                          style={{ fontFamily: fontBody }}
+                        >
+                          {person.email}
+                        </a>
+                        {'telephone' in person && person.telephone ? (
+                          <a
+                            href={`tel:${person.telephone.replace(/\s/g, '')}`}
+                            className="text-[14px] text-[#17231E]/80"
+                            style={{ fontFamily: fontBody }}
+                          >
+                            {person.telephone}
+                          </a>
+                        ) : null}
+                      </div>
+                    ) : null}
                   </div>
                 ))}
               </div>

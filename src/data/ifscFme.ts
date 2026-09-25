@@ -64,6 +64,7 @@ export const serviceProviders = [
   { type: 'Tax Advisor - US', name: 'Grant Thornton' },
   { type: 'Tax Advisor - Domestic', name: 'iMark Advisors' },
   { type: 'Legal Advisor', name: 'Economic Laws Practice (ELP)' },
+  { type: 'Legal Advisor', name: 'Lakshmikumaran & Sridharan Attorneys' },
 ];
 
 export const keyPersonnel = [
@@ -71,8 +72,6 @@ export const keyPersonnel = [
     role: 'Principal Officer',
     name: 'Dhruv Lalit Mehta',
     designation: 'Principal Officer',
-    email: 'dhruv@sapientwealth.co.in',
-    telephone: '+91 8108877555',
   },
   {
     role: 'Compliance Officer',
