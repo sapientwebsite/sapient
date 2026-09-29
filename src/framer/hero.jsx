@@ -511,7 +511,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 									<RichText
 										__fromCanvasComponent={true}
 										className={"framer-gvadsf"}
-										data-framer-name={"$1B+"}
+										data-framer-name={"$800 Million+"}
 										fonts={["GF;Plus Jakarta Sans-800"]}
 										layoutDependency={layoutDependency}
 										layoutId={"tj9aP70pz"}
@@ -536,7 +536,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														"var(--extracted-r6o4lv, rgb(164, 207, 107))",
 												}}
 											>
-												{"$1B+"}
+												{"$800 Million+"}
 											</motion.p>
 										</React.Fragment>
 									</RichText>

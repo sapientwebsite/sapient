@@ -1,5 +1,5 @@
 const stats = [
-  { value: '$1B+', label: 'Assets Under Management' },
+  { value: '$800 Million+', label: 'Assets Under Management' },
   { value: '70+', label: 'Years Of Experience' },
   { value: '15+', label: 'Managing Clients In Countries' },
   { value: '15000+', label: 'People Managed' },
