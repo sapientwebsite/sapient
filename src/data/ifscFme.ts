@@ -40,7 +40,7 @@ export const schemes = [
       'Multi-manager, long-term capital appreciation strategy participating in India\'s structural growth, investing primarily in units of SEBI-registered mutual funds, ETFs, Category I/II AIFs, and listed/unlisted Indian equity and equity-related securities. Benchmarked against the MSCI India USD Gross Return Index. Registered with SEBI as a Category I Foreign Portfolio Investor.',
     launchDate: 'Yet to be launched',
     status:
-      'Pending launch - PPM in finalisation, minimum Corpus of USD 3,000,000 to be raised',
+      'Pending launch',
   },
   {
     name: 'Sapient Wealth Global Opportunities Fund',
@@ -49,7 +49,7 @@ export const schemes = [
       'Long-term capital appreciation by investing in global equity & equity-related instruments (including listed securities, equity funds/ETFs, and derivatives) and other securities (fixed income, REITs/InvITs, commodities, etc.) across Global Markets outside India and GIFT-IFSC. Region agnostic, sector agnostic. Benchmarked against the MSCI All Country World Index (MSCI ACWI). Structured as an irrevocable, contributory, determinate investment trust under the Indian Trusts Act, 1882.',
     launchDate: 'Yet to be launched',
     status:
-      'Pending launch - PPM in finalisation, minimum Corpus of USD 3,000,000 to be raised',
+      'Pending launch',
   },
 ];
 
