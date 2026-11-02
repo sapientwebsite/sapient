@@ -1201,7 +1201,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										layoutId={"ox2rASnTc"}
 									>
 										<Link
-											href={"https://app.sapientwealth.net/app/#/login"}
+											href={"https://sapientwealth.investwell.app"}
 											motionChild={true}
 											nodeId={"nt_ZSY_TP"}
 											scopeId={"dZbRlifrz"}
@@ -2283,7 +2283,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													}}
 												>
 													<Link
-														href={"https://app.sapientwealth.net/app/#/login"}
+														href={"https://sapientwealth.investwell.app"}
 														motionChild={true}
 														nodeId={"eBvKE8eER"}
 														openInNewTab={true}
