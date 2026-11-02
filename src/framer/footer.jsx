@@ -1115,7 +1115,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											__fromCanvasComponent={true}
 											className={"framer-12e0jkr"}
 											data-framer-name={
-												"Sapient Wealth 2026 All Rights Reserved. Designed by Bricx"
+												"Sapient Wealth 2026 All Rights Reserved."
 											}
 											fonts={["FS;Satoshi-regular"]}
 											layoutDependency={layoutDependency}
@@ -1139,22 +1139,11 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 															"var(--extracted-r6o4lv, rgb(255, 255, 255))",
 													}}
 												>
+													{"Sapient Wealth 2026 All Rights Reserved."}
+													<br />
 													{
-														"Sapient Wealth 2026 All Rights Reserved. Designed by "
+														"AMFI Registered Mutual Fund Distributor and SIF Distributor (ARN - 75320)"
 													}
-													<Link
-														href={"bricxlabs.com"}
-														nodeId={"xte8he5Fz"}
-														openInNewTab={true}
-														smoothScroll={false}
-													>
-														<motion.a
-															className={"framer-styles-preset-jc6s9o"}
-															data-styles-preset={"RPI55sIY7"}
-														>
-															{"Bricx"}
-														</motion.a>
-													</Link>
 												</motion.p>
 											</React.Fragment>
 										</RichText>
@@ -2056,7 +2045,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											__fromCanvasComponent={true}
 											className={"framer-donjt"}
 											data-framer-name={
-												"Sapient Wealth 2026 All Rights Reserved. Designed by Bricx"
+												"Sapient Wealth 2026 All Rights Reserved."
 											}
 											fonts={["FS;Satoshi-regular"]}
 											layoutDependency={layoutDependency}
@@ -2080,22 +2069,11 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 															"var(--extracted-r6o4lv, rgb(255, 255, 255))",
 													}}
 												>
+													{"Sapient Wealth 2026 All Rights Reserved."}
+													<br />
 													{
-														"Sapient Wealth 2026 All Rights Reserved. Designed by "
+														"AMFI Registered Mutual Fund Distributor and SIF Distributor (ARN - 75320)"
 													}
-													<Link
-														href={"bricxlabs.com"}
-														nodeId={"JnphEQZ02"}
-														openInNewTab={true}
-														smoothScroll={false}
-													>
-														<motion.a
-															className={"framer-styles-preset-jc6s9o"}
-															data-styles-preset={"RPI55sIY7"}
-														>
-															{"Bricx"}
-														</motion.a>
-													</Link>
 												</motion.p>
 											</React.Fragment>
 										</RichText>
@@ -2161,6 +2139,8 @@ var css2 = [
 	".framer-BV86v.framer-v-wvsiez .framer-zz1q0x { width: 100%; max-width: 420px; }",
 	".framer-BV86v.framer-v-wvsiez .framer-1ijirhc { width: 100%; gap: 40px; justify-content: flex-start; }",
 	".framer-BV86v.framer-v-wvsiez .framer-12e0jkr { margin-top: 8px; }",
+	".framer-BV86v .framer-12e0jkr { white-space: normal; max-width: 100%; margin-top: 48px; align-self: flex-start; text-align: left; }",
+	".framer-BV86v .framer-12e0jkr p { --framer-line-height: 160% !important; }",
 	".framer-BV86v.framer-v-wvsiez .framer-12yhpdg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; width: 100%; justify-content: stretch; }",
 	".framer-BV86v.framer-v-wvsiez .framer-og9alu, .framer-BV86v.framer-v-wvsiez .framer-z4rugq, .framer-BV86v.framer-v-wvsiez .framer-4onfir { width: 100%; min-width: 0; }",
 	".framer-BV86v.framer-v-wvsiez .framer-1uqepi9, .framer-BV86v.framer-v-wvsiez .framer-mb4obu, .framer-BV86v.framer-v-wvsiez .framer-1ykhi1t, .framer-BV86v.framer-v-wvsiez .framer-5foygs, .framer-BV86v.framer-v-wvsiez .framer-l79q2n, .framer-BV86v.framer-v-wvsiez .framer-o22etr, .framer-BV86v.framer-v-wvsiez .framer-19nr13b, .framer-BV86v.framer-v-wvsiez .framer-865bm7, .framer-BV86v.framer-v-wvsiez .framer-ap5e2w, .framer-BV86v.framer-v-wvsiez .framer-cele92, .framer-BV86v.framer-v-wvsiez .framer-159xhvb, .framer-BV86v.framer-v-wvsiez .framer-kuojq2 { width: 100%; white-space: normal; word-break: normal; }",
