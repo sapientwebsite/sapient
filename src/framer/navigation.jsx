@@ -327,7 +327,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 	];
 	const investmentAdvisoryYears = [
 		{
-			href: "https://drive.google.com/file/d/1sTE3s2TszuXVcL176CEnyryKT5WjKSlj/view?usp=sharing",
+			href: "https://drive.google.com/file/d/1IxQ5ifTJUC26MaGHbhuWn127HSYlpoms/view?usp=sharing",
 			label: "F.Y. 2026-27",
 			nodeId: "mobileFy202627",
 		},
@@ -1028,7 +1028,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																		>
 																			{[
 																				{
-																					href: "https://drive.google.com/file/d/1sTE3s2TszuXVcL176CEnyryKT5WjKSlj/view?usp=sharing",
+																					href: "https://drive.google.com/file/d/1IxQ5ifTJUC26MaGHbhuWn127HSYlpoms/view?usp=sharing",
 																					label: "F.Y. 2026-27",
 																					nodeId: "TWcgSBdM_",
 																					layoutId: "Mj0wFeIh0",
